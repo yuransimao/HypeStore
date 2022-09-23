@@ -1,0 +1,96 @@
+@import "../../../Styles/import";
+
+.home{
+
+.section{
+width: 100%;
+height: 100%;
+
+.text{
+position: absolute;
+top: 50%;
+left: 7rem;
+
+.Btn1{
+    position:absolute;
+    margin-top:5rem;
+    a{
+    width:100%;
+    border:4px solid $color-primaria;
+    border-radius:4px;
+    background:$color-primaria;
+    color:$light-bg;
+    padding:0.8rem 5rem;
+    text-align:center;
+    font-size:1.5rem;
+    text-transform:uppercase;
+    &:hover{
+        filter:brightness(0.9);
+    }
+}
+}
+
+h1{
+position: relative;
+font-size: 3rem;
+color:transparent;
+
+
+
+
+
+&::before{
+content: attr(datatext);
+position: absolute;
+color:$light-bg;
+overflow: hidden;
+width: 0;
+height: 100%;
+border-right: 2px solid $light-bg;
+animation: text 6s linear infinite;
+
+}
+}
+
+}
+
+}
+.backVideo{
+position: absolute;
+filter: blur(1rem);
+top:0;
+z-index: -1;
+width: 100%;
+transition: 0.5s all ease;
+&:hover{
+    filter: blur(0);
+}
+}
+
+.section2{
+width: 100%;
+height: 90%;
+position:absolute;
+top:150%;
+color:white;
+.holder{
+
+ h2{
+    padding:5rem 0;
+    margin-left:60rem;
+ }
+}
+}
+
+}
+
+
+
+@keyframes text{
+    0%, 10%, 100%{
+        width:0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
