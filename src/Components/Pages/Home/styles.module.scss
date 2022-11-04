@@ -7,7 +7,7 @@
     
 .section{
 width: 100%;
-
+height: 100%;
 
 .text{
 position: absolute;
@@ -59,7 +59,7 @@ animation: text 6s linear infinite;
 
 }
 .backVideo{
-position:absolute;
+
 filter: blur(1rem);
 top:0;
 z-index: -1;
@@ -86,3 +86,80 @@ transition: 0.5s all ease;
         width: 100%;
     }
 }
+
+
+/*Responsive*/
+@media (max-width:1160px){
+    .home{
+        height: 100%;
+        .section{
+           
+            
+            
+            .text{
+           
+            top: 40%;
+           
+            
+            
+            
+          
+            }
+            
+            }
+           
+            
+    }
+    
+    }
+
+@media (max-width:991px){
+    html{
+    font-size: 55%;
+    }
+    .home{
+        height: 100%;
+        .section{
+            width: 100%;
+            
+            
+            .text{
+           
+            top: 34%;
+
+            h1{
+            font-size: 2.7rem;
+            }
+            
+            }
+            .Btn1{
+                position:absolute;
+                margin-top:4rem;
+                a{
+                width:100%;
+                
+               
+            }
+            }
+            }
+           
+            
+    }
+    
+    }
+    
+    
+    @media (max-width:890px){
+    
+       
+        
+       
+    
+    }
+    @media (max-width:705px){
+    
+       
+
+       
+    
+    }
