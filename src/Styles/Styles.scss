@@ -6,6 +6,8 @@
     flex-wrap: wrap;
     text-decoration: none;
     outline: none;
+    border:none;
+    background: none;
     user-select:none;
 }
 
@@ -16,6 +18,9 @@ html, body #root{
     
     
 }
+body{
+   background: $color-Black-light;
+}
 
 html{
     font-size: 62.5%;
@@ -24,9 +29,6 @@ html{
     scroll-padding-top: 6rem;
 }
 
-body{
-    background: $color-netflix;
-}
 
 @media (max-width:991px){
     html{

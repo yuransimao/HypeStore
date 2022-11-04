@@ -1,1 +1,1 @@
-# Loja
+ECHO est  ativado.

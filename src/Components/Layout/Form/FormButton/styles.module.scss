@@ -1,0 +1,17 @@
+@import "../../../../Styles/import";
+.formButton{
+    color: $color-white;
+    border: 2px solid $color-terciaria;
+    background: $color-terciaria;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    width: 86%;
+    height: 5rem;
+    margin-left: 7%;
+    cursor: pointer;
+    transition: all .4s;
+   
+    &:hover{
+    filter: brightness(0.9);  
+    }
+  }

@@ -3,16 +3,20 @@ import {FaBars} from "react-icons/fa"
 import {ImCross} from "react-icons/im"
 import {AiOutlineShoppingCart} from "react-icons/ai"
 import {BiSearch} from "react-icons/bi"
+import {BiUserCheck} from "react-icons/bi"
 import {TbUser} from "react-icons/tb"
 import { useState, useEffect } from "react"
+
 import store from "../../Img/store.png"
 
 
 
+
 import Styles from"./navbar.module.scss"
+import {Carshop} from "./Carshop"
 
 
-export function Navbar(){
+export function Navbar({carItem,addItems, addItemspruductRemove,trashClearproduct}){
 
     const [menu, setMenu] = useState(false)
     const [car, setcart] = useState(false)
@@ -54,11 +58,11 @@ export function Navbar(){
         <Link to="/Help"><li className={Styles.item}>Help</li></Link>
         </ul>
 
-        <div className={car ? `${Styles.Carshop} ` : `${Styles.cart}`} onClick={() => setcart(true)}> 
-            {car ? (
-                <p>finalizar</p>
-            ) : ""}
-        </div>
+            {car ? (<Carshop carItem={carItem} 
+            addItems={addItems} 
+            addItemspruductRemove={addItemspruductRemove}
+            trashClearproduct={trashClearproduct }
+            onClick={() => setcart(true)} />) : ""}
 
         <div className={Styles.btnIcon}>
             <div>
@@ -70,9 +74,22 @@ export function Navbar(){
                 <button  className={Styles.BtnCar} onClick={()=> setcart(!car)}>
                     {car ? <AiOutlineShoppingCart/> : <AiOutlineShoppingCart/> }
                  </button>
+
             </div>
             
-             <div><button className={Styles.User}> <TbUser/> </button></div>
+             <div className={Styles.User}>
+                
+            <button className={Styles.Userbutton}> <TbUser/> </button>
+
+             <div className={Styles.UserSessao}>
+            
+                <Link to='/SIGNUP'>Criar conta</Link>
+                <Link to='/SIGNIN'>Iniciar Sessao</Link>
+                    
+                
+             </div>
+             
+             </div>
 
             <div>
                 <button className={Styles.menuIcon} onClick= {() => setMenu(!menu)}>
@@ -81,6 +98,7 @@ export function Navbar(){
             </div>
         </div>
        </div>
+                 <div className={Styles.CarshopCont}><span>{(carItem || []).length ===0 ?"0" : (carItem || []).length}</span></div>
        <section className={Search ? `${Styles.activeSearch}` : `${Styles.search}`} onClick={() => setSearch(true)}>
             <form>
                 <input type="search" placeholder="search here.."/>

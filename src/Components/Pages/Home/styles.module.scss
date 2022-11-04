@@ -1,10 +1,13 @@
 @import "../../../Styles/import";
 
 .home{
-
+    
+    width: 100%;
+    height: 100%;
+    
 .section{
 width: 100%;
-height: 100%;
+
 
 .text{
 position: absolute;
@@ -56,7 +59,7 @@ animation: text 6s linear infinite;
 
 }
 .backVideo{
-position: absolute;
+position:absolute;
 filter: blur(1rem);
 top:0;
 z-index: -1;
@@ -67,20 +70,9 @@ transition: 0.5s all ease;
 }
 }
 
-.section2{
-width: 100%;
-height: 90%;
-position:absolute;
-top:150%;
-color:white;
-.holder{
 
- h2{
-    padding:5rem 0;
-    margin-left:60rem;
- }
-}
-}
+
+
 
 }
 
