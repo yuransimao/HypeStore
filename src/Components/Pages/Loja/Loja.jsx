@@ -2,8 +2,9 @@ import {Card} from "../../Layout/Card/card"
 import { useState, useEffect} from "react"
 import Styles from"./styles.module.scss"
 import {BiCategory} from "react-icons/bi"
-import {BsPhoneFill} from "react-icons/bs"
-
+import {BsPhone} from "react-icons/bs"
+import phoneIcon from "../../../ImgandVideo/phoneIcon.svg"
+import icondomestic from "../../../ImgandVideo/icondomestic.svg"
 import { Link } from "react-router-dom"
 export function Loja({addItems,funcNav}){
     const [Data, setDataimg] = useState([])
@@ -25,11 +26,36 @@ export function Loja({addItems,funcNav}){
     return (
    
 <div className={Styles.Lojabox}>
-       
+    
+    <div className={Styles.categoria_icon}><BiCategory/> <h1>Category</h1></div>
+   
     <div className={Styles.categoria}>
-        <div className={Styles.categoria_icon}><BiCategory/> <h1>Category</h1></div>
         <div className={Styles.Category_Item}>
-          
+        
+        <ul>
+
+        <li>
+        <div className={Styles.Category_itemIcon}>
+            <span><img src={phoneIcon} alt="phone"/></span>
+        </div>
+        <Link>Acessorios</Link>
+        </li>
+        
+        <li>
+        <div className={Styles.Category_itemIcon}>
+        <span><img src={phoneIcon} alt="phone"/></span>
+        </div>
+        <Link>Iphones</Link>
+        </li>
+        <li>
+
+        <div className={Styles.Category_itemIcon}>
+        <span><img src={icondomestic} alt="icondomestic"/></span>
+        </div>
+        <Link>Electrico domestico</Link>
+        </li>
+
+        </ul>
         </div>
     </div>
                        <div className={Styles.cardloaja}>

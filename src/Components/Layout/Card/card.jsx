@@ -2,7 +2,7 @@ import Styles from "./styles.module.scss"
 import {AiOutlineHeart} from "react-icons/ai"
 import {GoDiffAdded} from"react-icons/go"
 import { Link } from "react-router-dom"
-import { addDoc, collection,query } from "firebase/firestore"
+import { addDoc, collection} from "firebase/firestore"
 import {db} from "../../../Service/firbase"
 import { useState} from "react"
 
@@ -26,7 +26,9 @@ export function Card({name, img, price, oldPrice, addItems,Data}){
     setcont((prev) =>prev + 1)
     contar()
 }
-const  dados = query(collection(db, "reacoes"))
+const  dados = collection(db, "reacoes")
+
+
 async function contar(){
     const rec= await addDoc(dados,{
         number:cont
