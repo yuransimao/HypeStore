@@ -27,7 +27,7 @@ export function Loja({addItems,funcNav}){
    
 <div className={Styles.Lojabox}>
     
-    <div className={Styles.categoria_icon}><BiCategory/> <h1>Category</h1></div>
+    <div className={Styles.categoria_icon}><BiCategory/> </div>
    
     <div className={Styles.categoria}>
         <div className={Styles.Category_Item}>
@@ -52,7 +52,7 @@ export function Loja({addItems,funcNav}){
         <div className={Styles.Category_itemIcon}>
         <span><img src={icondomestic} alt="icondomestic"/></span>
         </div>
-        <Link>Electrico domestico</Link>
+        <Link>Electrico</Link>
         </li>
 
         </ul>

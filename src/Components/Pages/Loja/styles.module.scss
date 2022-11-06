@@ -38,6 +38,7 @@ li{
  border:2px solid $color-netflix;
  border-radius:4px;
  padding:0.2rem;
+ transition:0.2s all;
  
    &:hover{
     background:$color-secundaria;
@@ -48,6 +49,7 @@ a{
 font-size:1.4rem;
 color:$color-white;
 padding:0 1.5rem;
+cursor:pointer;
 }
 
 .Category_itemIcon{
@@ -91,3 +93,65 @@ gap: 20px;
 
 
 }
+
+
+/*Responsive*/
+
+@media (max-width:998px){
+    html{
+    font-size: 55%;
+    }
+    .Lojabox{
+    
+        .categoria_icon{
+        display:flex;
+        
+        }
+        .categoria{
+       
+        display:none;
+       
+        
+        
+        
+        }
+        
+        .cardloaja{
+
+        
+            display: flex;
+            top:7rem;
+            position:absolute;
+            right:0;
+            width:100%;
+            padding: 20px;
+            gap: 16px;
+            
+            }
+        }
+        
+        }
+        
+       
+        
+        
+        
+        
+    
+    
+    
+    
+    @media (max-width:890px){
+    
+       
+        
+       
+    
+    }
+    @media (max-width:705px){
+    
+       
+      
+       
+    
+    }
