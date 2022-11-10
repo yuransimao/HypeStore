@@ -6,7 +6,7 @@ height: 100%;
 
 
 
-.categoria_icon{
+.categoria_iconbutton{
 display:none;
 
 }
@@ -104,11 +104,95 @@ gap: 20px;
     .Lojabox{
     
         .categoria_icon{
+            width:100%;
+            background:$color-netflix;
+            box-shadow:3px 3px 3px 3px rgba(0, 0, 0, 0.23);
+            position:fixed;
+            right:0;
+            top:8.6rem;
+            z-index:20;
+           
+            .Category_Item{
+               
+                
+                ul{
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    width:100%;
+                li{
+                 display:flex;
+                 align-items:center;
+                 justify-content:center;
+                 border:2px solid $color-netflix;
+                 border-radius:4px;
+                 transition:0.2s all;
+                 padding:1rem;
+                 
+                 
+                   &:hover{
+                    background:$color-secundaria;
+                    border-left:2px solid $color-terciaria;
+                
+                   }
+                a{
+                font-size:1.4rem;
+                color:$color-white;
+                padding:0 1.5rem;
+                cursor:pointer;
+                }
+                
+                .Category_itemIcon{
+                    font-size:2rem;
+                    background:$color-terciaria;
+                    border-radius: 5px;
+                    clip-path:circle();
+                   width:10%;
+                  
+                  
+
+                
+                    span{
+                        color:$color-quart;
+                        img{
+                        
+                        margin-left:0.5rem;
+                        width:50%;
+                        object-fit:contain;
+                        
+                    }
+                   
+                }
+                
+                }
+                
+                }
+                
+                }
+                }
+                
+        }
+
+
+        .categoria_iconbutton{
         display:flex;
+        margin-top: 10rem;
+        margin-left:5rem;
+        font-size:2rem;
+        position:fixed;
+        z-index:21;
+        button{
+            color: aqua;
+            font-size:2rem;
+            cursor:pointer;
+            &:hover{
+                filter:brightness(0.9);
+            }
+        }
         
         }
         .categoria{
-       
+    
         display:none;
        
         
@@ -120,12 +204,13 @@ gap: 20px;
 
         
             display: flex;
-            top:7rem;
+            top:11rem;
             position:absolute;
             right:0;
-            width:100%;
+            width:95%;
             padding: 20px;
             gap: 16px;
+            margin-top:2rem;
             
             }
         }

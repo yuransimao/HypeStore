@@ -8,6 +8,7 @@ import icondomestic from "../../../ImgandVideo/icondomestic.svg"
 import { Link } from "react-router-dom"
 export function Loja({addItems,funcNav}){
     const [Data, setDataimg] = useState([])
+    const [Categoria, setCategoria] =useState(false)
     
     
     useEffect (() => {
@@ -27,9 +28,9 @@ export function Loja({addItems,funcNav}){
    
 <div className={Styles.Lojabox}>
     
-    <div className={Styles.categoria_icon}><BiCategory/> </div>
+    <div className={Styles.categoria_iconbutton}><button onClick={() => setCategoria(!Categoria)}><BiCategory/></button> </div>
    
-    <div className={Styles.categoria}>
+    <div className={Categoria ? `${Styles.categoria_icon}` : `${Styles.categoria}`} onClick={() => setCategoria(true)}>
         <div className={Styles.Category_Item}>
         
         <ul>
