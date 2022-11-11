@@ -63,6 +63,7 @@ export function Loja({addItems,funcNav}){
         )
         }
     </div>
+    </div>
         <div className={Styles.cardloaja}>
         
         {Data.map((item)=>(
@@ -80,7 +81,7 @@ export function Loja({addItems,funcNav}){
         ))}
 
         </div>
-                 </div>
+                 
                  </div>
 
     )
