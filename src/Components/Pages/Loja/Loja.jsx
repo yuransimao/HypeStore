@@ -6,6 +6,7 @@ import {ImCross} from "react-icons/im"
 import phoneIconphoneIcon from "../../../ImgandVideo/phoneIcon.svg"
 import icondomestic from "../../../ImgandVideo/icondomestic.svg"
 import { Link } from "react-router-dom"
+import {Lojaslide} from "./Lojaslide/Lojaslide"
 
 
 export function Loja({addItems,funcNav}){
@@ -41,7 +42,13 @@ export function Loja({addItems,funcNav}){
     return (
    
 <div className={Styles.Lojabox}>
-    
+
+   <div className={Styles.Loja_slide}> 
+   
+   <Lojaslide/>
+
+   
+   </div>
    
     <div className={Styles.categoria_iconbutton}>
     
@@ -79,9 +86,9 @@ export function Loja({addItems,funcNav}){
 
         />
         ))}
-
+ 
         </div>
-                 
+         
                  </div>
 
     )
