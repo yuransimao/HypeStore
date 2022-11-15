@@ -36,8 +36,11 @@ export function Lojaslide(){
         modules={[Autoplay, Pagination]}
         className={Styles.mySwiper}
       >
-        <SwiperSlide className={Styles.swiperslide}></SwiperSlide>
-        <SwiperSlide className={Styles.swiperslide}>Slide 2</SwiperSlide>
+        <SwiperSlide className={Styles.swiperslide}>          Yuran
+</SwiperSlide>
+        <SwiperSlide className={Styles.swiperslide}>         
+        Picasso
+</SwiperSlide>
         <SwiperSlide className={Styles.swiperslide}>Slide 3</SwiperSlide>
         
       </Swiper>

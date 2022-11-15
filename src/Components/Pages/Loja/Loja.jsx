@@ -44,10 +44,13 @@ export function Loja({addItems,funcNav}){
 <div className={Styles.Lojabox}>
 
    <div className={Styles.Loja_slide}> 
-   
-   <Lojaslide/>
-
-   
+   <div className={Styles.grid0}><Lojaslide/></div>
+   <div className={Styles.grid1}>
+    azul
+   </div>
+   <div className={Styles.grid2}>
+    blue
+   </div>
    </div>
    
     <div className={Styles.categoria_iconbutton}>
