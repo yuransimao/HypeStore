@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import phone from "../../../../ImgandVideo/pexels-tuur.jpg"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -36,12 +37,13 @@ export function Lojaslide(){
         modules={[Autoplay, Pagination]}
         className={Styles.mySwiper}
       >
-        <SwiperSlide className={Styles.swiperslide}>          Yuran
+        <SwiperSlide className={Styles.swiperslide}>         
+        <img src={phone}/>
 </SwiperSlide>
-        <SwiperSlide className={Styles.swiperslide1}>         
-        Picasso
+        <SwiperSlide className={Styles.swiperslide}>         
+        <img src={phone}/>
 </SwiperSlide>
-        <SwiperSlide className={Styles.swiperslide2}>Slide 3</SwiperSlide>
+        <SwiperSlide className={Styles.swiperslide}>Slide 3</SwiperSlide>
         
       </Swiper>
     </>
