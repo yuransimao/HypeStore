@@ -38,10 +38,10 @@ export function Lojaslide(){
       >
         <SwiperSlide className={Styles.swiperslide}>          Yuran
 </SwiperSlide>
-        <SwiperSlide className={Styles.swiperslide}>         
+        <SwiperSlide className={Styles.swiperslide1}>         
         Picasso
 </SwiperSlide>
-        <SwiperSlide className={Styles.swiperslide}>Slide 3</SwiperSlide>
+        <SwiperSlide className={Styles.swiperslide2}>Slide 3</SwiperSlide>
         
       </Swiper>
     </>

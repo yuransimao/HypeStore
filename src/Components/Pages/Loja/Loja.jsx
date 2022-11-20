@@ -29,7 +29,9 @@ export function Loja({addItems,funcNav}){
    
 <div className={Styles.Lojabox}>
     <Category/>
+
 <div className={Styles.Lojaboxs}>
+   
    <div className={Styles.Loja_slide}> 
    <div className={Styles.grid0}>
     <Lojaslide/>
@@ -41,7 +43,9 @@ export function Loja({addItems,funcNav}){
     blue
    </div>
    </div>
-   
+   <div className={Styles.LojaBest}>
+       <h1>Best <span>Prduct</span></h1>
+   </div>
         <div className={Styles.cardloaja}>
         
         {Data.map((item)=>(

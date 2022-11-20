@@ -6,23 +6,42 @@ height: 100%;
 
 
 .Lojaboxs{
-width:80%;
+width:85%;
 position:absolute;
 top:10rem;
 right:0;
 .cardloaja{
-
 display: flex;
 gap: 20px;
+padding: 5%;
 
+}
+
+.LojaBest{
+
+h1{
+    font-size: 2rem;
+    font-family:$font-Roboto;
+    font-weight: 500;
+    text-align: center;
+span{
+    font-size: 1.3em;
+    font-family:$font-poppins;
+    background: $color-terciaria;
+    color:$light-bg;
+    padding: 1rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+}
 }
 .Loja_slide{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: 30vh 30vh 30vh;
-
-
 grid-gap: 20px;
+align-items: center;
+justify-content: center;
+padding: 5%;
 
 
 .grid0{
@@ -31,7 +50,8 @@ grid-gap: 20px;
     height:100%;
 }
 .grid1{
-    background:orange;
+    background: url(../../../ImgandVideo/mudassir.jpg);
+
     height:100%;
     @include background();
 }
