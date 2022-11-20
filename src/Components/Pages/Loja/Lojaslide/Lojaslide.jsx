@@ -23,10 +23,10 @@ import { Autoplay, Pagination} from "swiper";
 
 export function Lojaslide(){
   const product =[{
-produtImg:`${phone}`
+produtImg:`${phoneX}`
   },
   {
-produtImg:`${phoneX}`
+produtImg:`${phone}`
   }
 
 ]
