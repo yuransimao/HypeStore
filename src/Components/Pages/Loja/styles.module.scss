@@ -55,12 +55,15 @@ height:100%;
 @include background();
 
 h1{
-color: $color-netflix;
+color: $color-green;
 margin-top: 12rem;
 margin-left: 1.5rem;
 font-weight:200;
-font-family: $font-Roboto;
-font-size: 2rem;
+font-family: $font-BebasNeue;
+text-transform: capitalize;
+opacity: 0;
+transition: .7s all ease-in;
+font-size: 3rem;
 }
 }
 .grid2{

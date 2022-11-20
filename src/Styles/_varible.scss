@@ -17,18 +17,27 @@ $color-scuro:#130f40;
 $color-pink:#fd2d98;
 $color-aqua:aqua;
 $light-bg:#dfdfdf;
+
+//Font family
+
 $font-Roboto: "Roboto";
 $font-poppins:'Poppins';
-$border:21rem solid rgba(0,0,0,.2);
+$font-AlfaSlab:'Alfa Slab One';
+$font-Montserrat: 'Montserrat';
+$font-BebasNeue:'Bebas Neue';
 
+//mixin
 @mixin background {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;  
     filter: blur(0.2rem); 
     transition: .6s;
-    &:hover{
+&:hover {
     background-size: 120%;
     filter: blur(0);
+    h1{
+    opacity: 1;
     }
+}
 }
