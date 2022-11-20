@@ -37,8 +37,11 @@ export function Loja({addItems,funcNav}){
     <Lojaslide/>
     </div>
    <div className={Styles.grid1}>
-    azul
-   </div>
+    
+    <h1>Compra já o seu </h1>   
+    
+    </div>
+
    <div className={Styles.grid2}>
     blue
    </div>

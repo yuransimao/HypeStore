@@ -25,10 +25,10 @@ $border:21rem solid rgba(0,0,0,.2);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;  
-    filter: grayscale(30%);  
+    filter: blur(0.3rem); 
     transition: .6s;
     &:hover{
     background-size: 120%;
-    filter: grayscale(0%);
+    filter: blur(0);
     }
 }
