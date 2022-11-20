@@ -29,9 +29,11 @@ export function Loja({addItems,funcNav}){
    
 <div className={Styles.Lojabox}>
     <Category/>
-
+<div className={Styles.Lojaboxs}>
    <div className={Styles.Loja_slide}> 
-   <div className={Styles.grid0}><Lojaslide/></div>
+   <div className={Styles.grid0}>
+    <Lojaslide/>
+    </div>
    <div className={Styles.grid1}>
     azul
    </div>
@@ -57,7 +59,7 @@ export function Loja({addItems,funcNav}){
         ))}
  
         </div>
-         
+        </div>
                  </div>
 
     )
