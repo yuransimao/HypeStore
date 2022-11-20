@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import phone from "../../../../ImgandVideo/pexels-tuur.jpg"
+import phoneX from "../../../../ImgandVideo/pexels-tyler.jpg"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -21,6 +22,15 @@ import { Autoplay, Pagination} from "swiper";
 
 
 export function Lojaslide(){
+  const product =[{
+produtImg:`${phone}`
+  },
+  {
+produtImg:`${phoneX}`
+  }
+
+]
+
     return (
       <>
       <Swiper
@@ -37,13 +47,16 @@ export function Lojaslide(){
         modules={[Autoplay, Pagination]}
         className={Styles.mySwiper}
       >
-        <SwiperSlide className={Styles.swiperslide}>         
-        <img src={phone}/>
-</SwiperSlide>
-        <SwiperSlide className={Styles.swiperslide}>         
-        <img src={phone}/>
-</SwiperSlide>
-        <SwiperSlide className={Styles.swiperslide}>Slide 3</SwiperSlide>
+        {product.map((item, index)=>{
+          return(
+            <SwiperSlide className={Styles.swiperslide} key={index}>         
+        <img src={item.produtImg}/>
+        </SwiperSlide>
+          )
+        })}
+        
+
+       
         
       </Swiper>
     </>
