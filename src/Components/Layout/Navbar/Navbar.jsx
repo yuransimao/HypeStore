@@ -46,17 +46,26 @@ export function Navbar({carItem,addItems, addItemspruductRemove,trashClearproduc
 
          <div className={Styles.wrapper}>
 
-        <div className={Styles.logo}><Link to="/"> <img  src={store} alt="logo" /></Link></div>
+        <div className={Styles.logo}><Link to="/" > <img width='50' src={store} alt="logo" /></Link></div>
 
         <ul className={menu ?`${Styles.menulink}` : `${Styles.navlink}`} onClick= {()=> setMenu(true)}  >
        
-        <Link to="/"><li className={Styles.item}>Home</li></Link>
+        <li className={Styles.item}><Link to="/">Home</Link></li>
+        <li className={Styles.item}>Categoria</li>
 
-        <Link to="/Loja"><li className={Styles.item}>Loja</li></Link>
-        <Link to="/Aboult"><li className={Styles.item}>About</li></Link>
-        <Link to="/Contact"><li className={Styles.item}>Contact</li></Link>
-        <Link to="/Help"><li className={Styles.item}>Help</li></Link>
+        <li className={Styles.item}> <Link to="/Loja">Loja</Link></li>
+        <li className={Styles.item}><Link to="/Aboult">About</Link></li>
+        <li className={Styles.item}><Link to="/Contact">Contact</Link></li>
+        <li className={Styles.item}><Link to="/Help">Help</Link></li>
         </ul>
+
+        <div className={Styles.search}>
+            <form>
+                <input type="search" placeholder="search here.."/>
+                <div><BiSearch/></div>
+            </form>
+            
+       </div>
 
             {car ? (<Carshop carItem={carItem} 
             addItems={addItems} 
@@ -65,11 +74,7 @@ export function Navbar({carItem,addItems, addItemspruductRemove,trashClearproduc
             onClick={() => setcart(true)} />) : ""}
 
         <div className={Styles.btnIcon}>
-            <div>
-                <button onClick={() => setSearch(!Search)}>
-                    {Search ?  <ImCross/> :<BiSearch/>}
-                </button>
-            </div>
+            
             <div>
                 <button  className={Styles.BtnCar} onClick={()=> setcart(!car)}>
                     {car ? <AiOutlineShoppingCart/> : <AiOutlineShoppingCart/> }
@@ -96,16 +101,9 @@ export function Navbar({carItem,addItems, addItemspruductRemove,trashClearproduc
                 {menu ? <ImCross/> : <FaBars/>}
                 </button>
             </div>
+                 <div className={Styles.CarshopCont}><span>{(carItem || []).length ===0 ?"0" : (carItem || []).length}</span></div>
         </div>
        </div>
-                 <div className={Styles.CarshopCont}><span>{(carItem || []).length ===0 ?"0" : (carItem || []).length}</span></div>
-       <section className={Search ? `${Styles.activeSearch}` : `${Styles.search}`} onClick={() => setSearch(true)}>
-            <form>
-                <input type="search" placeholder="search here.."/>
-                <div><BiSearch/></div>
-            </form>
-            <label htmlfor={Styles.input}> </label>
-       </section>
     
         </div>
     )
