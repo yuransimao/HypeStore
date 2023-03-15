@@ -1,20 +1,62 @@
 @import "../../../Styles/import";
 
 .header{
-max-width:100%;
-max-height: 10vh;
+width:100%;
+max-height: 8vh;
 background:transparent;
+position:fixed;
+
 .wrapper{
 width:100%;
 display:flex;
 align-items:center;
-justify-content:space-between;
+justify-content:space-around;
 
 .navlink{
 display:flex;
 li{
-    padding:0 12px;
+padding:0 12px;
+color:$color-secundaria;
+font-size:1.3rem;
+cursor:pointer;
+a{
+    color:$color-secundaria;  
 }
 }
+}
+.search{
+min-width:20%;
+height:3.5vh;
+background:$search-bg;
+border-radius:2rem;
+form{ 
+
+height:3.5vh;
+max-height:100%;
+display:flex;
+
+input{
+padding-left:1rem;
+line-height:10%;
+
+&::placeholder{
+    text-transform:capitalize;
+    font-size:1.2rem;
+}
+}
+button{
+   margin-top:4px;
+   margin-left:6px;
+}
+}
+}
+}
+
+.btnIcon{
+    display:flex;
+    padding-right:4rem;
+    .User{
+        padding:0 1.5rem;
+    }
 }
 }

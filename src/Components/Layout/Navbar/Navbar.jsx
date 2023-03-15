@@ -62,7 +62,7 @@ export function Navbar({carItem,addItems, addItemspruductRemove,trashClearproduc
         <div className={Styles.search}>
             <form>
                 <input type="search" placeholder="search here.."/>
-                <div><BiSearch/></div>
+                <button><BiSearch/></button>
             </form>
             
        </div>
@@ -87,14 +87,16 @@ export function Navbar({carItem,addItems, addItemspruductRemove,trashClearproduc
             <button className={Styles.Userbutton}> <TbUser/> </button>
 
              <div className={Styles.UserSessao}>
+             {/*
             
                 <Link to='/SIGNUP'>Criar conta</Link>
                 <Link to='/SIGNIN'>Iniciar Sessao</Link>
                     
                 
+            */}
              </div>
              
-             </div>
+            </div>
 
             <div>
                 <button className={Styles.menuIcon} onClick= {() => setMenu(!menu)}>
