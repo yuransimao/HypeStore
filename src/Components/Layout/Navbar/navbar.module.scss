@@ -2,9 +2,10 @@
 
 .header{
 width:100%;
-max-height: 8vh;
+height: 8vh;
 background:transparent;
 position:fixed;
+
 
 .wrapper{
 width:100%;
@@ -47,6 +48,7 @@ line-height:10%;
 button{
    margin-top:4px;
    margin-left:6px;
+   cursor:pointer;
 }
 }
 }
@@ -59,4 +61,6 @@ button{
         padding:0 1.5rem;
     }
 }
+
 }
+

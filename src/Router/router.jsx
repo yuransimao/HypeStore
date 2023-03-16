@@ -7,7 +7,7 @@ import {Aboult} from "../Components/Pages/Aboult/About"
 import {SIGNUP} from "../Components/Project/SreenLogin/SIGNUP/SIGNUP"
 import {SIGNIN} from "../Components/Project/SreenLogin/SIGNIN/SIGNIN"
 import {Container} from "../Components/Layout/Container/Container"
-import {Navbar} from "../Components/Layout/Navbar/Navbar"
+import {Layout} from "../Components/Layout/Layout"
 import { useState} from "react"
 
 
@@ -51,7 +51,7 @@ export default function Routers(){
      <BrowserRouter>
      
      {showNav &&
-      <Navbar 
+      <Layout 
       addItems={addItems} 
       carItem={carItem}
       addItemspruductRemove={addItemspruductRemove}

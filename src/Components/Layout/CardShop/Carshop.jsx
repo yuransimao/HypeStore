@@ -1,4 +1,4 @@
-import Styles from"./navbar.module.scss"
+import Styles from"./styles.module.scss"
 import {ImCross} from "react-icons/im"
 import {BsTrashFill} from "react-icons/bs"
 

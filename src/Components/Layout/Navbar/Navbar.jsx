@@ -13,13 +13,13 @@ import store from "../../Img/store.png"
 
 
 import Styles from"./navbar.module.scss"
-import {Carshop} from "./Carshop"
 
 
-export function Navbar({carItem,addItems, addItemspruductRemove,trashClearproduct}){
+
+export function Navbar({setcart, car,carItem}){
 
     const [menu, setMenu] = useState(false)
-    const [car, setcart] = useState(false)
+   
     const [Search, setSearch] = useState(false)
     const [Navbar, setNavbar] = useState(false)
 
@@ -66,12 +66,6 @@ export function Navbar({carItem,addItems, addItemspruductRemove,trashClearproduc
             </form>
             
        </div>
-
-            {car ? (<Carshop carItem={carItem} 
-            addItems={addItems} 
-            addItemspruductRemove={addItemspruductRemove}
-            trashClearproduct={trashClearproduct }
-            onClick={() => setcart(true)} />) : ""}
 
         <div className={Styles.btnIcon}>
             
