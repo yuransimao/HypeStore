@@ -8,7 +8,8 @@ export function Layout({carItem,addItems, addItemspruductRemove,trashClearproduc
     return(
         <>
         <Navbar setcart={setcart} car={car} carItem={carItem}/>
-        {car ? (<Carshop carItem={carItem} 
+        {car ? (<Carshop carItem={carItem}
+            setcart={setcart} 
             addItems={addItems} 
             addItemspruductRemove={addItemspruductRemove}
             trashClearproduct={trashClearproduct }

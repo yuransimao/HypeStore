@@ -46,7 +46,7 @@ export function Navbar({setcart, car,carItem}){
 
          <div className={Styles.wrapper}>
 
-        <div className={Styles.logo}><Link to="/" > <img width='50' src={store} alt="logo" /></Link></div>
+        <div className={Styles.logo}><Link to="/" > <img  src={store} alt="logo" /></Link></div>
 
         <ul className={menu ?`${Styles.menulink}` : `${Styles.navlink}`} onClick= {()=> setMenu(true)}  >
        
@@ -71,7 +71,7 @@ export function Navbar({setcart, car,carItem}){
             
             <div>
                 <button  className={Styles.BtnCar} onClick={()=> setcart(!car)}>
-                    {car ? <AiOutlineShoppingCart/> : <AiOutlineShoppingCart/> }
+                    <AiOutlineShoppingCart/> 
                  </button>
 
             </div>
@@ -97,7 +97,7 @@ export function Navbar({setcart, car,carItem}){
                 {menu ? <ImCross/> : <FaBars/>}
                 </button>
             </div>
-                 <div className={Styles.CarshopCont}><span>{(carItem || []).length ===0 ?"0" : (carItem || []).length}</span></div>
+                
         </div>
        </div>
     

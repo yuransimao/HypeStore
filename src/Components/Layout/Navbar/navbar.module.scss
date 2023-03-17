@@ -1,9 +1,11 @@
 @import "../../../Styles/import";
 
 .header{
+display:flex;
+align-items:center;
 width:100%;
-height: 8vh;
-background:transparent;
+height: 10vh;
+
 position:fixed;
 
 
@@ -13,15 +15,36 @@ display:flex;
 align-items:center;
 justify-content:space-around;
 
+.logo{
+height:5vh;
+background:$color-yellow;
+border-radius:50%;
+width:4vw;
+text-align:center;
+img{
+max-height:90%;
+}
+}
 .navlink{
 display:flex;
+align-items:center;
+height: 10vh;
 li{
 padding:0 12px;
 color:$color-secundaria;
 font-size:1.3rem;
+font-family:$font-Montserrat;
 cursor:pointer;
+transition: .3s all ;
+
+&:hover{
+    color:$color-yellow;
+}
 a{
-    color:$color-secundaria;  
+color:$color-secundaria;  
+&:hover{
+    color:$color-yellow;
+}
 }
 }
 }
@@ -41,25 +64,38 @@ padding-left:1rem;
 line-height:10%;
 
 &::placeholder{
-    text-transform:capitalize;
-    font-size:1.2rem;
+text-transform:capitalize;
+font-size:1.2rem;
 }
 }
 button{
-   margin-top:4px;
-   margin-left:6px;
-   cursor:pointer;
+margin-top:4px;
+margin-left:6px;
+cursor:pointer;
 }
 }
 }
 }
 
 .btnIcon{
-    display:flex;
-    padding-right:4rem;
-    .User{
-        padding:0 1.5rem;
-    }
+display:flex;
+padding-right:2rem;
+
+.User, .BtnCar, .menuIcon{
+padding:0 1.2rem;
+
+cursor:pointer;
+svg{
+    font-size:1.7rem;
+    color:$color-green;
+}
+&:hover{
+
+}
+}
+.menuIcon{
+    display:none;
+}
 }
 
 }

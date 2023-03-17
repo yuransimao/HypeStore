@@ -1,15 +1,18 @@
 import Styles from"./styles.module.scss"
-import {ImCross} from "react-icons/im"
+
 import {BsTrashFill} from "react-icons/bs"
+import {ImCross} from "react-icons/im"
 
-
-export function Carshop({carItem,addItemspruductRemove,trashClearproduct }){
+export function Carshop({carItem,addItemspruductRemove,trashClearproduct,setcart }){
     const shop =carItem
 
     const totalPrice = shop.reduce((price, item) => price + item.quantity * item.Price,0)
     return(
 
         <div className={Styles.Carshop}>
+            <button  className={Styles.BtnCar} onClick={()=> setcart(false)}>
+            <ImCross/>
+            </button>
         <div className={Styles.Carshop_totalPrice}>Total Price:<span>{totalPrice}</span></div>
         <div className={Styles.Carshop_Trash}> {shop.length >=1 && (<button onClick={trashClearproduct}><BsTrashFill/></button>
         )}</div>
