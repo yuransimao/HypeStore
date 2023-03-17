@@ -1,9 +1,23 @@
+@import "../../../Styles/import";
 .Carshop{
-    min-height:100vh;
-    position:fixed;
-    right:0;
-    background:rgb(134, 133, 133);
-    width:20%;
-    border-radius:4px 0 ;
-    z-index:3;
+min-height:100vh;
+position:fixed;
+right:0;
+background:$color-green;
+width:20%;
+border-radius:4px 0 ;
+z-index:3;
+color:$color-white;
+
+.Carshop_btnCross{
+position: relative;
+left: calc(100% - 4em);
+.BtnCar{
+padding: 1rem;
+cursor: pointer;
+svg{
+color:$color-yellow;
+}
+}
+}
 }

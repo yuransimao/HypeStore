@@ -10,9 +10,11 @@ export function Carshop({carItem,addItemspruductRemove,trashClearproduct,setcart
     return(
 
         <div className={Styles.Carshop}>
-            <button  className={Styles.BtnCar} onClick={()=> setcart(false)}>
-            <ImCross/>
-            </button>
+            <div className={Styles.Carshop_btnCross}>
+                <button  className={Styles.BtnCar} onClick={()=> setcart(false)}>
+                <ImCross/>
+                </button>
+            </div>
         <div className={Styles.Carshop_totalPrice}>Total Price:<span>{totalPrice}</span></div>
         <div className={Styles.Carshop_Trash}> {shop.length >=1 && (<button onClick={trashClearproduct}><BsTrashFill/></button>
         )}</div>
