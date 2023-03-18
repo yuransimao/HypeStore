@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 import {FaBars} from "react-icons/fa"
 import {ImCross} from "react-icons/im"
-import {AiOutlineShoppingCart} from "react-icons/ai"
+import {AiOutlineShoppingCart,AiFillHome} from "react-icons/ai"
 import {BiSearch} from "react-icons/bi"
-import {BiUserCheck} from "react-icons/bi"
+import {BiUserCheck,BiCategory} from "react-icons/bi"
 import {TbUser} from "react-icons/tb"
 import { useState, useEffect } from "react"
 
@@ -44,14 +44,14 @@ export function Navbar({setcart, car,carItem}){
     return(
         <div className={Navbar ? `${Styles.activeHeader}` : `${Styles.header}`} >
 
-         <div className={Styles.wrapper}>
-
+         <div className={ Styles.wrapper}>
+        
         <div className={Styles.logo}><Link to="/" > <img  src={store} alt="logo" /></Link></div>
 
-        <ul className={menu ?`${Styles.menulink}` : `${Styles.navlink}`} onClick= {()=> setMenu(true)}  >
+        <ul className={menu ?`${Styles.menulink}` : `${Styles.navlink}`} >
        
-        <li className={Styles.item}><Link to="/">Home</Link></li>
-        <li className={Styles.item}>Categoria</li>
+        <li className={Styles.item}><Link to="/">{menu ? <AiFillHome/> :'Home'}</Link></li>
+        <li className={Styles.item}>{menu ? <BiCategory/> : 'Categoria'}</li>
 
         <li className={Styles.item}> <Link to="/Loja">Loja</Link></li>
         <li className={Styles.item}><Link to="/Aboult">About</Link></li>
@@ -92,14 +92,16 @@ export function Navbar({setcart, car,carItem}){
              
             </div>
 
-            <div>
+            
+                
+        </div>
+        <>
                 <button className={Styles.menuIcon} onClick= {() => setMenu(!menu)}>
                 {menu ? <ImCross/> : <FaBars/>}
                 </button>
-            </div>
-                
-        </div>
+            </>
        </div>
+       
     
         </div>
     )
