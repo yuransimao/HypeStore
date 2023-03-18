@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 import {FaBars} from "react-icons/fa"
 import {ImCross} from "react-icons/im"
-import {AiOutlineShoppingCart,AiFillHome} from "react-icons/ai"
+import {AiOutlineShoppingCart,AiFillHome,AiFillContacts} from "react-icons/ai"
 import {BiSearch} from "react-icons/bi"
-import {BiUserCheck,BiCategory} from "react-icons/bi"
+import {BiUserCheck,BiCategory, BiStoreAlt, BiHelpCircle} from "react-icons/bi"
 import {TbUser} from "react-icons/tb"
 import { useState, useEffect } from "react"
 
@@ -53,10 +53,10 @@ export function Navbar({setcart, car,carItem}){
         <li className={Styles.item}><Link to="/">{menu ? <AiFillHome/> :'Home'}</Link></li>
         <li className={Styles.item}>{menu ? <BiCategory/> : 'Categoria'}</li>
 
-        <li className={Styles.item}> <Link to="/Loja">Loja</Link></li>
+        <li className={Styles.item}> <Link to="/Loja">{menu ? <BiStoreAlt/> : "Loja"}</Link></li>
         <li className={Styles.item}><Link to="/Aboult">About</Link></li>
-        <li className={Styles.item}><Link to="/Contact">Contact</Link></li>
-        <li className={Styles.item}><Link to="/Help">Help</Link></li>
+        <li className={Styles.item}><Link to="/Contact">{menu ? <AiFillContacts/> : 'Contact'}</Link></li>
+        <li className={Styles.item}><Link to="/Help">{menu ? <BiHelpCircle/> : "Help"}</Link></li>
         </ul>
 
         <div className={Styles.search}>
