@@ -8,6 +8,7 @@ width:20%;
 border-radius:4px 0 ;
 z-index:3;
 color:$color-white;
+animation: fadeUp .4s linear ;
 
 .Carshop_btnCross{
 position: relative;
@@ -21,3 +22,10 @@ color:$color-green;
 }
 }
 }
+
+@keyframes fadeUp{
+    0%{
+    transform:translateX(5rem);
+    opacity:0;
+    }
+    }
