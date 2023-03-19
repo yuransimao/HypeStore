@@ -15,9 +15,9 @@ import Styles from"./navbar.module.scss"
 
 
 
-export function Navbar({setcart, car,carItem}){
+export function Navbar({setcart, car,carItem,menu, setMenu}){
 
-    const [menu, setMenu] = useState(false)
+ 
    
     const [Search, setSearch] = useState(false)
     const [Navbar, setNavbar] = useState(false)
