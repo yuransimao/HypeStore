@@ -143,20 +143,28 @@ color: rgb(87, 86, 86);
     
 .header{
 .items{
-
+justify-content: none;
 
 
 .items_link{
 display: none;
 
 }
-
-
+.Search{
+    margin-top: 1rem;
+    width: 97%;
+    order: 3;
+}
+.Items_btn{
+    order: 1;
+}
 
 
 }
 .items1{
-
+    button{
+        order: 2;
+    }
 .Nav_Link{
 display: none;
 }

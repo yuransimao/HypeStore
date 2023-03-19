@@ -74,7 +74,9 @@ export function Navbar({setcart, car,carItem}){
 
         <div className={Styles.items1}>
 
-            <button><FaBars/> <span>All items</span></button>
+            <button onClick={() => setMenu(!menu)}>
+                {menu ?  <FaBars/>: <ImCross/>} <span>All items</span>
+            </button>
             <div className={Styles.Nav_Link}>
                 <ul>
                     <li><Link>Student Disconte</Link></li>
