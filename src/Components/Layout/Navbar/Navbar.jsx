@@ -38,6 +38,17 @@ export function Navbar({setcart, car,carItem,menu, setMenu}){
 
            
     },[])
+
+    const cart = () =>{
+        setcart(!car)
+        setMenu(false)
+
+    }
+    const Menu = () =>{
+        setcart(false)
+        setMenu(!menu)
+
+    }
      
    
     return(
@@ -62,7 +73,7 @@ export function Navbar({setcart, car,carItem,menu, setMenu}){
 
                 </div>
                 <div className={Styles.Items_btn}>
-                    <button  className={Styles.Btn} onClick={()=> setcart(!car)}>
+                    <button  className={Styles.Btn} onClick={cart}>
                         <AiOutlineShoppingCart/> 
                                 </button>
                     <button  className={Styles.Btn} >
@@ -74,7 +85,7 @@ export function Navbar({setcart, car,carItem,menu, setMenu}){
 
         <div className={Styles.items1}>
 
-            <button onClick={() => setMenu(!menu)}>
+            <button onClick={Menu}>
                 {menu ?  <ImCross/> : <FaBars/>} <span>All items</span>
             </button>
             <div className={Styles.Nav_Link}>

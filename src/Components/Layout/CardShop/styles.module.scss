@@ -3,7 +3,7 @@
 min-height:100vh;
 position:fixed;
 right:0;
-background:$color-green;
+background:$color-yellow;
 width:20%;
 border-radius:4px 0 ;
 z-index:3;
@@ -16,7 +16,7 @@ left: calc(100% - 4em);
 padding: 1rem;
 cursor: pointer;
 svg{
-color:$color-yellow;
+color:$color-green;
 }
 }
 }
