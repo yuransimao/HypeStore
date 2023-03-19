@@ -1,108 +1,116 @@
 @import "../../../Styles/import";
 
 .header{
-display:flex;
-align-items:center;
-width:100%;
-height: 10vh;
 
+padding:1rem 2rem;
+background: $color-netflix;
+width:100%;
+height: 14vh;
 position:fixed;
 
 
-.wrapper{
-    .menuIcon{
-        display:none;
-    }
-width:100%;
-display:flex;
-align-items:center;
-justify-content:space-around;
 
+.items{
+margin-bottom: 1.5rem ;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+.items_link{
+ul{
+display: flex;
+li{
+font-size: 1.5rem;
+padding: 0 2rem;
+a{
+color:$light-bg;
+}
+}
+}
+}
 .logo{
-height:5vh;
+
 background:$color-yellow;
-border-radius:50%;
-width:4vw;
+border-radius: 4px;
+width:3vw;
 text-align:center;
 img{
+object-fit: cover;
 max-height:90%;
+max-width: 100%;
 }
 }
-.menulink{
-display: none;
-}
-.navlink,.menulink{
-display:flex;
-align-items:center;
-height: 10vh;
-li{
-padding:0 12px;
-color:$color-secundaria;
-font-size:1.3rem;
-font-family:$font-Montserrat;
-cursor:pointer;
-transition: .3s all ;
 
-&:hover{
-    color:$color-yellow;
-}
-a{
-color:$color-secundaria;  
-&:hover{
-    color:$color-yellow;
-}
-}
-}
-}
-.search{
-width:25%;
-height:3.7vh;
-background:$search-bg;
-border-radius:2rem;
-form{ 
-
-height:3.7vh;
-max-height:100%;
-display:flex;
+.Search{
+border-radius: 4px;
+min-width:54%;
+min-height: 5.5vh;
+background: $search-bg; 
+form{
+max-width: 100%;
+max-height: 100%;
 
 input{
-padding-left:1rem;
-line-height:12%;
-width: 85%;
+
+width: 92%;
+line-height:5.5vh;
+padding-left: 1rem;
+text-align: left;
+color:$color-netflix;
+font-size: 1.5rem;
+
 &::placeholder{
-text-transform:capitalize;
-font-size:1.2rem;
+    color:rgb(71, 71, 71);
 }
+
+
 }
+
+
+
 button{
-margin-top:4px;
-margin-left: 9px;
-cursor:pointer;
+   margin-top: 1rem; 
+   margin-left: 3rem;
+   font-size: 1.7rem;
 }
+} 
 }
-}
-}
-
-.btnIcon{
-display:flex;
-padding-right:2rem;
-
-.User, .BtnCar{
-padding:0 1.2rem;
-
-cursor:pointer;
-svg{
-    font-size:1.7rem;
-    color:$color-green;
-}
+.Items_btn{
+    padding:0 2rem;
+    
+.Btn{
+color:$color-white;
+margin:0 1rem;
+font-size: 2rem;
+cursor: pointer;
+transition: all .4s ease-in-out;
 &:hover{
-
+color:$color-yellow;
+}
+}
 }
 }
 
+.items1{
+    display:flex;
+    justify-content: space-between;
+    button{
+        text-align: center;
+    font-size: 1.7rem;
+    color:$color-white;
+    
+    }
+    .Nav_Link{
+        max-width: 90%;
+        ul{
+            display: flex;
+        }
+    }
+}
 }
 
-}
+
 
 //Responsividade
 
