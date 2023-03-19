@@ -1,4 +1,5 @@
 import {Navbar} from "./Navbar/Navbar"
+import {SubMenu} from "./SubMenu/submenu"
 import {Carshop} from "./CardShop/Carshop"
 import { useState, } from "react"
 
@@ -14,7 +15,7 @@ export function Layout({carItem,addItems, addItemspruductRemove,trashClearproduc
             addItemspruductRemove={addItemspruductRemove}
             trashClearproduct={trashClearproduct }
             onClick={() => setcart(true)} />) : ""}
-
+            <SubMenu/>
         </>
     )
 }
