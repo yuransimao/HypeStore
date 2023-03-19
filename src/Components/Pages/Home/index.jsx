@@ -23,7 +23,7 @@ export function Home ({funcNav}){
         <div className={Styles.home} >
  
               <>
-              
+              <Slide/>
            
               </>
          
