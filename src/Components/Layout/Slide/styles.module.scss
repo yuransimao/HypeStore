@@ -1,13 +1,13 @@
 .mySwiper {
-  margin-top: 0.3rem;
-  margin-bottom: 4%;
-  max-width: 100%;
+  
+  max-width: 97%;
   height: calc(100vh/2.6);
   min-height: 270px;
+  background:black;
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: black;
+      background: white;
     
       /* Center slide text vertically */
       display: flex;

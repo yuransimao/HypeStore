@@ -52,7 +52,7 @@ export function Navbar({setcart, car,carItem,menu, setMenu}){
      
    
     return(
-        <div className={Navbar ? `${Styles.activeHeader}` : `${Styles.header}`} >
+        <div className={Styles.header} >
 
         
         
