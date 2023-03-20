@@ -1,7 +1,7 @@
 
 import Styles from"./styles.module.scss"
 
-import {Slide} from"./slide"
+import {Slide} from"../../Layout/Slide/Swiper"
 
 
 
