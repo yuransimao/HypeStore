@@ -116,20 +116,21 @@ color:$light-bg;
 
 }
 .Nav_Link{
-width: 90%;
+width: 91%;
 
 ul{
-display: flex;
+
 .mySwiper{
     max-width:100%;
     .swiper-slide{
-       
-        min-width:10%;
+
+    min-width:11%;
     }
 }
 li{
-font-size: 1.2rem;
+font-size: 1.4rem;
 font-family: $font-poppins;
+font-weight:300;
 a{
 transition: all .4s ease-in-out;
 color:$color-white;

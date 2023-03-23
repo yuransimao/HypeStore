@@ -101,7 +101,8 @@ export function Navbar({setcart, car,carItem,menu, setMenu}){
             <div className={Styles.Nav_Link}>
                 <ul>
                 <Swiper
-        slidesPerView={12}
+        slidesPerView={10}
+        s
         
         
         className={Styles.mySwiper}
@@ -117,8 +118,9 @@ export function Navbar({setcart, car,carItem,menu, setMenu}){
         <SwiperSlide className={Styles['swiper-slide']}><li><Link>iMac</Link></li></SwiperSlide>
         <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone 11</Link></li></SwiperSlide>
         <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone 12</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone 13</Link></li></SwiperSlide>
         <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone XR</Link></li></SwiperSlide>
-        <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone XR</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>Electro Domestico</Link></li></SwiperSlide>
       </Swiper>
                     
                     
