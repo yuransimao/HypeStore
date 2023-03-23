@@ -9,7 +9,7 @@ export function CardR (props){
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div className={Styles.Card_img}>
-            <img src={iphone} alt={iphone} width="280" />
+            <img src={iphone} alt={iphone} />
         </div>
 
         <div className={Styles.Card_btn}>

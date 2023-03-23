@@ -37,6 +37,7 @@ export  function  Swippers() {
     >
       <SwiperSlide className={Styles['swiper-slide']}><CardR/></SwiperSlide>
       
+      
     </Swiper>
   </>
 );
