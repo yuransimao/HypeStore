@@ -4,14 +4,15 @@
 .home{
     
     width: 100%;
-height: 100%;
-
+height: 100vh;
+background:blue;
 }
 .home_container{
+    
+    
     margin:auto;
     position:relative;
     top:15rem;
     width: 97%;
-   
-    
+    height:50vh;    
 }

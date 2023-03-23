@@ -3,12 +3,11 @@
 display: flex;
 align-items: center;
 justify-content: space-around;
-flex-grow:1;
 color:white;
 border-radius: 14px;
 background:$color-secundaria;
-width: 100%;
-
+max-width: 100%;
+max-height:87%;
 .Card_text{
 padding: 1rem;
 
@@ -30,21 +29,27 @@ color:$light-bg;
 }
 
 .Card_img{
-width:20% ;
+margin-top:-2.5rem;
+width:25% ;
+position:relative;
+z-index:10;
+
 img{
 max-width:100%;
+
+
 object-fit:cover;
 }
 
 }
 
 .Card_btn{
+font-family: $font-poppins;
 
 button{
 background: $color-white;
 padding: 1.5rem;
 border-radius:5px;
-font-family: $font-poppins;
 text-transform: capitalize;
 cursor: pointer;
 transition:all .4s ease-in-out;
