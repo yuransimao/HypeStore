@@ -1,7 +1,39 @@
+@import "../../../../Styles/import";
 .Card_conteiner{
-    min-width: 100%;
-    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    max-height: 100%;
+    color:white;
     border-radius: 14px;
-    background: blue;
+    background:$color-Black-light;
 
+    .Card_text{
+        padding: 1rem;
+        h1{
+            font-family: $font-AlfaSlab;
+            font-weight: 50;
+            text-transform: capitalize;
+            font-size: 5em;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-family: $font-BebasNeue;
+            font-weight:10;
+            font-size: 1.3rem;
+            color:$light-bg;
+       
+        }
+    }
+
+    .Card_img{
+        position: relative;
+        z-index: 20;
+        height:100%;
+        max-width:40% ;
+        img{
+           
+        }
+    }
 }
