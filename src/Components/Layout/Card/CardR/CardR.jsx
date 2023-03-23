@@ -12,8 +12,8 @@ export function CardR (props){
             <img src={iphone} alt={iphone} width="280" />
         </div>
 
-        <div className={Styles.Card_button}>
-            <button>Shop</button>
+        <div className={Styles.Card_btn}>
+            <button>Shop Now</button>
         </div>
 
     </div>

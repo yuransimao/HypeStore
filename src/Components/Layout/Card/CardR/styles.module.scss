@@ -7,7 +7,7 @@
     max-height: 100%;
     color:white;
     border-radius: 14px;
-    background:$color-Black-light;
+    background:$color-secundaria;
 
     .Card_text{
         padding: 1rem;
@@ -34,6 +34,18 @@
         max-width:40% ;
         img{
            
+        }
+    }
+
+    .Card_btn{
+
+        button{
+            background: $color-white;
+            padding: 1.5rem;
+            border-radius:5px;
+            font-family: $font-poppins;
+            text-transform: capitalize;
+            cursor: pointer;
         }
     }
 }
