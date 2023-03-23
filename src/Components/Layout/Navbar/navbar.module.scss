@@ -117,10 +117,17 @@ color:$light-bg;
 }
 .Nav_Link{
 width: 90%;
+
 ul{
 display: flex;
+.mySwiper{
+    max-width:100%;
+    .swiper-slide{
+       
+        min-width:10%;
+    }
+}
 li{
-padding:0 1.5rem;
 font-size: 1.2rem;
 font-family: $font-poppins;
 a{

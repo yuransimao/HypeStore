@@ -6,6 +6,16 @@ import {BiSearch} from "react-icons/bi"
 import {FaUserAlt} from "react-icons/fa"
 import { useState, useEffect } from "react"
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
+
+
+
 import store from "../../Img/store.png"
 
 
@@ -90,20 +100,30 @@ export function Navbar({setcart, car,carItem,menu, setMenu}){
             </button>
             <div className={Styles.Nav_Link}>
                 <ul>
-                    <li><Link>Student Disconte</Link></li>
-                    <li><Link>Good deals</Link></li>
-                    <li><Link>Smartphones</Link></li>
-                    <li><Link>AirPods</Link></li>
-                    <li><Link>Tablets</Link></li>
-                    <li><Link>iPhone</Link></li>
-                    <li><Link>iPad</Link></li>
-                    <li><Link>Apple Watch</Link></li>
-                    <li><Link>iMac</Link></li>
-                    <li><Link>iPhone 11</Link></li>
-                    <li><Link>iPhone 12</Link></li>
-                    <li><Link>iPhone XR</Link></li>
-                    <li><Link></Link></li>
-                    <li><Link></Link></li>
+                <Swiper
+        slidesPerView={12}
+        
+        
+        className={Styles.mySwiper}
+      >
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>Student Disconte</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>Good deals</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>Smartphones</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>AirPods</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>Tablets</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPad</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>Apple Watch</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>iMac</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone 11</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone 12</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone XR</Link></li></SwiperSlide>
+        <SwiperSlide className={Styles['swiper-slide']}><li><Link>iPhone XR</Link></li></SwiperSlide>
+      </Swiper>
+                    
+                    
+                    
+                
                 </ul>
             </div>
         </div>
