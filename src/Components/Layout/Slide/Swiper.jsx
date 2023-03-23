@@ -36,7 +36,6 @@ export  function  Swippers() {
       className={Styles['mySwiper']}
     >
       <SwiperSlide className={Styles['swiper-slide']}><CardR/></SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}><CardR/></SwiperSlide>
       
     </Swiper>
   </>
