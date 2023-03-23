@@ -1,15 +1,7 @@
 
 import Styles from"./styles.module.scss"
 
-import {Swippers} from"../../Layout/Slide/Swiper"
-
-
-
-
-
-
-
-
+import Swippers from"../../Layout/Slide/Swiper"
 
 
 

@@ -17,7 +17,7 @@ import { Autoplay, Pagination, Mousewheel } from "swiper";
 
 
 
-export  function  Swippers() {
+export  default function  Swippers() {
 
   return (
     <>
@@ -31,10 +31,10 @@ export  function  Swippers() {
         clickable: true,
       }}
       mousewheel={true}
-      
       modules={[Autoplay, Pagination,  Mousewheel]}
       className={Styles['mySwiper']}
     >
+      <SwiperSlide className={Styles['swiper-slide']}><CardR/></SwiperSlide>
       <SwiperSlide className={Styles['swiper-slide']}><CardR/></SwiperSlide>
       
       
