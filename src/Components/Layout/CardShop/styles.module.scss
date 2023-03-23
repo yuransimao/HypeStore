@@ -9,7 +9,7 @@ border-radius:4px 0 ;
 z-index:3;
 color:$color-white;
 animation: fadeUp .4s linear ;
-
+z-index: 102;
 .Carshop_btnCross{
 position: relative;
 left: calc(100% - 4em);

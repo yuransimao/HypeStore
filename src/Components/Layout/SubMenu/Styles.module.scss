@@ -6,6 +6,7 @@
  top:calc(100vh - 86vh);
  padding-top:0.2rem;
  animation: fadeUp .4s linear ;
+ z-index: 50;
  .Submenu_items{
 
     position:fixed;

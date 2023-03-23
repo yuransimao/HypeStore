@@ -1,6 +1,7 @@
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { CardR } from "../Card/CardR/CardR";
 
 // Import Swiper styles
 import "swiper/css";
@@ -34,16 +35,9 @@ export  function  Swippers() {
       modules={[Autoplay, Pagination,  Mousewheel]}
       className={Styles['mySwiper']}
     >
-      <SwiperSlide className={Styles['swiper-slide']}>Slide 1</SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}>Slide 1</SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}>Slide </SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}>Slide 3</SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}>Slide 4</SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}>Slide 5</SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}>Slide 6</SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}>Slide 7</SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}>Slide 8</SwiperSlide>
-      <SwiperSlide className={Styles['swiper-slide']}>Slide 9</SwiperSlide>
+      <SwiperSlide className={Styles['swiper-slide']}><CardR/></SwiperSlide>
+      <SwiperSlide className={Styles['swiper-slide']}><CardR/></SwiperSlide>
+      
     </Swiper>
   </>
 );
