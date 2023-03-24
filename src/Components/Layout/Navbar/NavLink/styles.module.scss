@@ -34,14 +34,15 @@
     font-family: $font-poppins;
     font-weight:290;
     border-bottom:1px solid $light-bg;
-    a{
     transition: all .4s ease-in-out;
+    a{
     color:$color-netflix;
     text-transform: capitalize;
+    
+    }
     &:hover{
-    color: rgb(87, 86, 86);
-    }
-    }
+        background: rgba(104, 103, 103, 0.226);
+        }
     }
     }
     }

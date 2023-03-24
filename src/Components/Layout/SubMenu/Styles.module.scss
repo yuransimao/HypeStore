@@ -13,6 +13,12 @@
     background:white;
     height:100%;
     width:20%;
+
+    nav{
+        position:absolute;
+       height:100%;
+        &:hover{overflow:auto;}
+    }
  }
 }
 
