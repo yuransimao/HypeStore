@@ -5,8 +5,8 @@ export function NavLink(props){
     return(
         <div className={Styles[props.Class]}>
                     <ul>
-                        <li><Link>Student Disconte</Link></li>
-                        <li><Link>Good deals</Link></li>
+                        <li><Link className={Styles['active']}>Student Disconte</Link></li>
+                        <li><Link className={Styles['active1']}>Good deals</Link></li>
                         <li><Link>Smartphones</Link></li>
                         <li><Link>AirPods</Link></li>
                         <li><Link>Tablets</Link></li>
