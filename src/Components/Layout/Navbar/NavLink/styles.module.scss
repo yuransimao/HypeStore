@@ -23,3 +23,36 @@
     }
     }
     }
+.Submenu_Link{
+    max-width: 100%;
+    
+    ul{
+    
+    li{
+    padding:1.5rem 5rem;
+    font-size: 1.2rem;
+    font-family: $font-poppins;
+    font-weight:290;
+    border-bottom:1px solid $light-bg;
+    a{
+    transition: all .4s ease-in-out;
+    color:$color-netflix;
+    text-transform: capitalize;
+    &:hover{
+    color: rgb(87, 86, 86);
+    }
+    }
+    }
+    }
+    }
+
+    @media  (max-width:768px) {
+
+        
+        .Nav_Link{
+        display: none;
+        }
+        
+
+        
+        }
