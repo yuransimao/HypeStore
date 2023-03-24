@@ -1,7 +1,9 @@
 @import "../../../Styles/import";
 
 .header{
-
+display:flex;
+flex-direction:column;
+justify:center;
 padding:1rem 2rem;
 background: $color-netflix;
 width:100%;
@@ -12,7 +14,7 @@ z-index:100;
 
 
 .items{
-margin-bottom: 1.5rem ;
+margin-bottom: 1.2rem ;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -103,6 +105,7 @@ color:$color-yellow;
 display:flex;
 width: 100%;
 justify-content: space-between;
+align-items:center;
 button{
 text-align: center;
 font-size: 1.7rem;
@@ -116,21 +119,18 @@ color:$light-bg;
 
 }
 .Nav_Link{
-width: 91%;
+width: 89%;
 
 ul{
+display:flex;
 
-.mySwiper{
-    max-width:100%;
-    .swiper-slide{
-
-    min-width:11%;
-    }
-}
 li{
+    white-space:nowrap;
+margin-right:1.5rem;
 font-size: 1.4rem;
 font-family: $font-poppins;
-font-weight:300;
+font-weight:290;
+
 a{
 transition: all .4s ease-in-out;
 color:$color-white;

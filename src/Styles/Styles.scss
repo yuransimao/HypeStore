@@ -35,7 +35,9 @@ html{
     scroll-padding-top: 6rem;
 }
 
-
+.swiper-pagination-bullet{
+    background:white;
+}
 @media (max-width:991px){
     html{
         font-size: 55%;
