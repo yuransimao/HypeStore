@@ -1,0 +1,25 @@
+@import "../../../../Styles/import";
+.Nav_Link{
+    width: 89%;
+    
+    ul{
+    display:flex;
+    
+    li{
+        white-space:nowrap;
+    margin-right:1.5rem;
+    font-size: 1.4rem;
+    font-family: $font-poppins;
+    font-weight:290;
+    
+    a{
+    transition: all .4s ease-in-out;
+    color:$color-white;
+    text-transform: capitalize;
+    &:hover{
+    color: rgb(87, 86, 86);
+    }
+    }
+    }
+    }
+    }

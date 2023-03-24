@@ -5,15 +5,7 @@ import { AiOutlineShoppingCart, AiFillHome, AiFillContacts } from "react-icons/a
 import { BiSearch } from "react-icons/bi"
 import { FaUserAlt } from "react-icons/fa"
 import { useState, useEffect } from "react"
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
-
+import {NavLink} from "./NavLink/Navlink"
 
 
 import store from "../../Img/store.png"
@@ -98,47 +90,7 @@ export function Navbar({ setcart, car, carItem, menu, setMenu }) {
                 <button onClick={Menu}>
                     {menu ? <ImCross /> : <FaBars />} <span>All items</span>
                 </button>
-                <div className={Styles.Nav_Link}>
-                    <ul>
-                        <li><Link>Student Disconte</Link></li>
-                        <li><Link>Good deals</Link></li>
-                        <li><Link>Smartphones</Link></li>
-                        <li><Link>AirPods</Link></li>
-                        <li><Link>Tablets</Link></li>
-                        <li><Link>iPhone</Link></li>
-                        <li><Link>iPad</Link></li>
-                        <li><Link>Apple Watch</Link></li>
-                        <li><Link>iMac</Link></li>
-                        <li><Link>iPhone 11</Link></li>
-                        <li><Link>iPhone 12</Link></li>
-                        <li><Link>iPhone 13</Link></li>
-                        <li><Link>iPhone XR</Link></li>
-                        <li><Link>iPhone SE (2020)</Link></li>
-                        <li><Link>Accessories</Link></li>
-                        <li><Link>iPhone X</Link></li>
-                        <li><Link>iPhone 12 Pro Max</Link></li>
-                        <li><Link>iPhone 12 Pro</Link></li>
-                        <li><Link>iPhone 11 Pro Max</Link></li>
-                        <li><Link>Samsung Smartphones</Link></li>
-                        <li><Link>Samsung 5G Phones</Link></li>
-                        <li><Link>MacBook Pro</Link></li>
-                        <li><Link>MacBook Air</Link></li>
-                        <li><Link>Laptops</Link></li>
-                        <li><Link>Computers and Laptops</Link></li>
-                        <li><Link>Cameras and Lenses</Link></li>
-                        <li><Link>Headphones and Earphones</Link></li>
-                        <li><Link>iPad Air</Link></li>
-                        <li><Link>iPad Mini</Link></li>
-                        <li><Link>iPad Pro</Link></li>
-                        <li><Link>Gift guide</Link></li>
-                        <li><Link>Electro Domestico</Link></li>
-
-
-
-
-
-                    </ul>
-                </div>
+                <NavLink Class='Nav_Link'/>
             </div>
         </div>
     )
