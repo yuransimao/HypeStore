@@ -60,13 +60,18 @@ height:82%;
             background:white;
             border-radius:12px;
             .about_text{
-                max-width:50%;
+                width:50%;
                 
                 padding:4rem;
                 background:blue;
                 .btn{
                     margin-top:3rem;
                 }
+            }
+
+            .container_About_icon{
+                background:yellow;
+                width:50%;
             }
         }
     }

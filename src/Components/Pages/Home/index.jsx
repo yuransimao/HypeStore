@@ -4,6 +4,7 @@ import Swippers from"../../Layout/Slide/Swiper"
 import {Slidet} from"../../Layout/Slide/SlideCard/slidet"
 import {Grid} from"../../Layout/Grid/grid"
 import {LinkButton} from"../../Layout/Button/button"
+import {Soriso} from"../../Layout/Icons/icons"
 
 
 
@@ -33,6 +34,7 @@ export function Home ({funcNav}){
         <Grid/>
 
         <div className={Styles.container_About}>
+
         <div className={Styles.about_text}>
           <h1>Nós somos os renovados(super) HypeStore.</h1>
           <div className={Styles.btn}>
@@ -40,6 +42,13 @@ export function Home ({funcNav}){
           </div>
 
         </div>
+
+        <div className={Styles.container_About_icon}> 
+         <ul>
+          <li></li>
+         </ul>
+        </div>
+
         </div>
 
         </div>
