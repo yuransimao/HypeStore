@@ -21,12 +21,15 @@ export function Home ({funcNav}){
                 </div>
                 
               <div className={Styles.home_Card}>
-              <h1>Hotter than the hottest potato</h1>
+              <h1 className={Styles.Home_titile}>Hotter than the hottest potato <span>Or “potatoe”</span></h1>
 
               <div className={Styles['home-card']}>
            <Slidet/>
         </div>
+        <h1>Look</h1>
               </div>
+
+              
         </div>
     )
 }

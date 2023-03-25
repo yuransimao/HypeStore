@@ -2,14 +2,15 @@
 
 
 .card{
-min-height: calc(150px * 2);
-max-height: calc(150px * 2);
+min-height: calc(150px * 1.9);
+max-height: calc(150px * 1.9);
 background:rgb(61, 57, 57);
 max-width: 100%;
 border-radius: 7px;
 transition: all .4s ease-in-out;
 &:hover{
 box-shadow: $box-shadow;
+transform: scale(1.1);
 }
 
 a{

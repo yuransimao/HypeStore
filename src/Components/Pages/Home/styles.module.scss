@@ -8,6 +8,7 @@ background:rgb(224, 224, 224);
 
 
 
+
 .home_Swippers{
     
     
@@ -25,9 +26,16 @@ background:rgb(224, 224, 224);
     width:100%;
     background:rgb(224, 224, 224);
     
-    h1{
+    .Home_titile{
         margin-left: 7rem ;
         margin-bottom: 3rem;
+        font-family: $font-poppins;
+        font-weight: 400;
+
+        span{
+            font-size: 1.4rem;
+            font-weight: 350;
+        }
     }
 
 
