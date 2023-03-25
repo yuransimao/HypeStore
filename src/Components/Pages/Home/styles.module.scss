@@ -14,17 +14,21 @@ background:rgb(224, 224, 224);
     margin:auto;
     position:relative;
     top:12rem;
-    width: 90%;
+    width: 95%;
     height:50vh;    
     
 }
 
 .home_Card{
     position:relative;
-    top:calc(100vh - 50rem);
+    top:calc(100vh - 54rem);
     width:100%;
     background:rgb(224, 224, 224);
     
+    h1{
+        margin-left: 7rem ;
+        margin-bottom: 3rem;
+    }
 
 
 }

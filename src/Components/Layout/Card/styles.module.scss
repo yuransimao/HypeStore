@@ -3,10 +3,11 @@
 
 .card{
 min-height: calc(150px * 2);
-height: calc(150px * 2);
-background:white;
+max-height: calc(150px * 2);
+background:rgb(61, 57, 57);
 max-width: 100%;
-border-radius: 5px;
+border-radius: 7px;
+transition: all .4s ease-in-out;
 &:hover{
 box-shadow: $box-shadow;
 }
@@ -17,7 +18,7 @@ color: black;
 max-width: 100%;
 .Cardimg{
 max-width: 52%;
-margin: 1rem auto;
+margin: 2rem auto;
 img{
 object-fit: cover;
 max-width: 100%;
@@ -26,7 +27,23 @@ max-width: 100%;
 
 .Cardproduct{
     max-width: 100%;
+    margin-top: 2rem;
     margin-left:2rem ;
+    padding: 2rem;
+    text-transform: capitalize;
+    font-family:$font-BebasNeue;
+    h1{
+        font-size: 2.5rem;
+        font-weight: 200;
+    }
+    p{
+        color: rgb(104, 104, 104);
+        font-size: 1.4rem;
+        padding: 0.5rem 0;
+    }
+    span{
+        font-size: 1.2rem;
+    }
 }
 }
 }

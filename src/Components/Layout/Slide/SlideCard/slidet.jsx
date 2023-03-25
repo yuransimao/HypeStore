@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import Styles from "./styles.module.scss";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Navigation } from "swiper";
 
 export  function Slidet() {
 
@@ -35,10 +35,8 @@ export  function Slidet() {
         slidesPerView={4}
         spaceBetween={30}
         freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
+        navigation={true}
+        modules={[FreeMode, Navigation]}
         className={Styles.mySwiper}
       >
         
