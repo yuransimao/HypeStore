@@ -51,3 +51,56 @@ max-width: 100%;
 }
 }
 }
+
+
+
+.cardGrid{
+min-height: calc(150px * 1.9);
+max-height: calc(150px * 1.9);
+background:rgb(255, 255, 255);
+max-width: 100%;
+border-radius: 7px;
+transition: all .4s ease-in-out;
+&:hover{
+box-shadow: $box-shadow;
+
+}
+
+a{
+color: black;
+.card_Container{
+max-width: 100%;
+.Cardimg{
+max-width: 32%;
+margin: 2rem auto;
+img{
+object-fit: cover;
+max-width: 100%;
+}
+}
+
+.Cardproduct{
+    max-width: 100%;
+    
+    margin-left:2rem ;
+   
+    text-transform: capitalize;
+    font-family:$font-BebasNeue;
+    h1{
+        font-size: 2.5rem;
+        font-weight: 200;
+        
+        color:$light-bg;
+    }
+    p{
+        color: rgb(158, 158, 158);
+        font-size: 1.4rem;
+        padding: 0.5rem 0;
+    }
+    span{
+        font-size: 1.2rem;
+    }
+}
+}
+}
+}

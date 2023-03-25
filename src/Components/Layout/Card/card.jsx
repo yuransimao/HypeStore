@@ -21,7 +21,7 @@ export function Card({clasCard,name, img, price, oldPrice, addItems,Data}){
                 <div className={Styles.Cardproduct}>
                     <h1>{name}</h1>
                     <p>Description</p>
-                    <span>$ {price} Kz </span>
+                    {price ? <span>$ {price} Kz </span> : ''}
                 </div>
                 
                 

@@ -26,9 +26,12 @@ export function Home ({funcNav}){
               <div className={Styles['home-card']}>
            <Slidet/>
         </div>
-        <h1>Look</h1>
+
+        <div className={Styles.grid}>
+          <h1>Look</h1>
         <Grid/>
-              </div>
+        </div>
+        </div>
 
               
         </div>
