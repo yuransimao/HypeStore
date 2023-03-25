@@ -2,17 +2,30 @@
 
 
 .home{
-    
-    width: 100%;
+width: 100%;
 height: 100vh;
 background:rgb(224, 224, 224);
-}
-.home_container{
+
+
+
+.home_Swippers{
     
     
     margin:auto;
     position:relative;
     top:12rem;
-    width: 97%;
+    width: 90%;
     height:50vh;    
+    
+}
+
+.home_Card{
+    position:relative;
+    top:calc(100vh - 50rem);
+    width:100%;
+    
+    
+
+
+}
 }
