@@ -2,7 +2,7 @@
 import Styles from"./styles.module.scss"
 
 import Swippers from"../../Layout/Slide/Swiper"
-import {Slidet} from"../../Layout/Slide/slidet"
+import {Slidet} from"../../Layout/Slide/SlideCard/slidet"
 
 
 

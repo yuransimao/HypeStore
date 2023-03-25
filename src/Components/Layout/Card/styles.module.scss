@@ -2,5 +2,32 @@
 
 
 .card{
-    
+min-height: calc(150px * 2);
+height: calc(150px * 2);
+background:white;
+max-width: 100%;
+border-radius: 5px;
+&:hover{
+box-shadow: $box-shadow;
+}
+
+a{
+color: black;
+.card_Container{
+max-width: 100%;
+.Cardimg{
+max-width: 52%;
+margin: 1rem auto;
+img{
+object-fit: cover;
+max-width: 100%;
+}
+}
+
+.Cardproduct{
+    max-width: 100%;
+    margin-left:2rem ;
+}
+}
+}
 }
