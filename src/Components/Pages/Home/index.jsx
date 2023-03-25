@@ -28,7 +28,7 @@ export function Home ({funcNav}){
         </div>
 
         <div className={Styles.grid}>
-          <h1>Look</h1>
+          <h1 className={Styles.Home_Subtitile}>Top Sellers <span>- Roll up, roll up!</span></h1>
         <Grid/>
         </div>
         </div>

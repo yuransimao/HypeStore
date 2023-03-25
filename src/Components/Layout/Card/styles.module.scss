@@ -4,7 +4,7 @@
 .card{
 min-height: calc(150px * 1.9);
 max-height: calc(150px * 1.9);
-background:rgb(61, 57, 57);
+background:$color-gray-dark;
 max-width: 100%;
 border-radius: 7px;
 transition: all .4s ease-in-out;
@@ -57,7 +57,7 @@ max-width: 100%;
 .cardGrid{
 min-height: calc(150px * 1.9);
 max-height: calc(150px * 1.9);
-background:rgb(255, 255, 255);
+background:$color-primaria;
 max-width: 100%;
 border-radius: 7px;
 transition: all .4s ease-in-out;

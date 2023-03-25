@@ -43,6 +43,17 @@ background:rgb(224, 224, 224);
         margin:auto;
         align-items:center;
         width:90%;
+
+        .Home_Subtitile{
+            margin-top: 7rem ;
+            margin-bottom: 3rem;
+            font-family: $font-poppins;
+        font-weight: 400;
+        span{
+            font-size: 1.4rem;
+            font-weight: 350;
+        }
+        }
         
     }
 
