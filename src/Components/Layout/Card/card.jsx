@@ -6,12 +6,12 @@ import { Link } from "react-router-dom"
 
 
 
-export function Card({name, img, price, oldPrice, addItems,Data}){
+export function Card({clasCard,name, img, price, oldPrice, addItems,Data}){
     
     return(
         
        
-        <div className={Styles.card}>
+        <div className={Styles[clasCard]}>
         <Link>
             <div className={Styles.card_Container}>
                 

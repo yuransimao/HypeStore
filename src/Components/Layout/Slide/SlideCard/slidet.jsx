@@ -49,7 +49,7 @@ export  function Slidet() {
         oldPrice={item.oldPrice}
         img={item.img}
         Data={item}
-
+        clasCard='card'
 
         />
 
