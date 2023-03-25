@@ -4,7 +4,7 @@ import Swippers from"../../Layout/Slide/Swiper"
 import {Slidet} from"../../Layout/Slide/SlideCard/slidet"
 import {Grid} from"../../Layout/Grid/grid"
 import {LinkButton} from"../../Layout/Button/button"
-import {Soriso} from"../../Layout/Icons/icons"
+import {Seta,Soriso, Sacola,Impack} from"../../Layout/Icons/icons"
 
 
 
@@ -45,7 +45,43 @@ export function Home ({funcNav}){
 
         <div className={Styles.container_About_icon}> 
          <ul>
-          <li></li>
+
+          <div className={Styles.Item}>
+            <li>
+              {Seta}
+              <div ClassName={Styles.Item_text}>
+              <span>Best offer on the market</span> <p>
+              The best price and quality selected for you.
+            </p>
+            </div>
+
+            </li>
+
+            <li>
+              {Soriso}
+              <div >
+              <span >Quality guaranteed</span>
+              <p>Ensuring our sellers maintain our high standards.</p>
+              </div>
+            </li>
+          </div>
+
+          <div className={Styles.Item1}>
+            <li>
+              {Sacola}
+              <div>
+              <span >Proper Service</span>
+              <p>A shopping experience that meets your expectations.</p>
+              </div>
+              </li>
+              <li >
+                {Impack}
+              <div>
+              <span >Real impact</span>
+              <p>Addressing a very real problem.</p>
+              </div>
+              </li>
+          </div>
          </ul>
         </div>
 
