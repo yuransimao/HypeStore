@@ -56,11 +56,17 @@ height:82%;
         }
         .container_About{
             display:flex;
-            width:100%;height:50rem;
+            width:100%;height:46rem;
             background:white;
             border-radius:12px;
             .about_text{
-                max-width:100%;
+                max-width:50%;
+                
+                padding:4rem;
+                background:blue;
+                .btn{
+                    margin-top:3rem;
+                }
             }
         }
     }
