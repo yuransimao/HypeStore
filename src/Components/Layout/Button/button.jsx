@@ -1,10 +1,10 @@
 import {Link} from"react-router-dom"
 import Styles from"./Style.module.scss"
-export function LinkButton ({to, txts}){
+export function LinkButton ({to, txt}){
     return(
         
-    <Link  className={Styles.Btao} to={to}>
-        {txts}
+    <Link  className={Styles.Botao} to={to}>
+        {txt}
     </Link>
 
     )
