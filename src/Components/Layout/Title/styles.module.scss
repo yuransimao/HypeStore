@@ -9,6 +9,7 @@
     span{
     font-size: 1.4rem;
     font-weight: 350;
+    padding:0 1rem;
     }
     }
 
@@ -19,6 +20,41 @@
         font-weight: 400;
         span{
         font-size: 1.4rem;
+        padding:0 1rem;
         font-weight: 350;
         }
         }
+
+
+        
+.TitleAbout{
+position:relative;
+font-family:$font-MPLUSCodeLatin;
+font-weight:200;
+color:transparent;
+&::before{
+animation:texto  5s steps(110, end) alternate infinite;
+content:attr(data-text);
+position:absolute;
+white-space:nowrap;
+overflow:hidden;
+color:$color-netflix;
+width:0px;
+border-right:4px solid $color-netflix;
+
+}
+}
+
+        @keyframes texto{
+            0%{
+            width:0;
+            border-color:transparent;
+            }
+            50%{
+            
+            border-color:$color-netflix;
+            }
+            100%{
+            width:92%;
+            }
+            }

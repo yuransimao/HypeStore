@@ -30,14 +30,17 @@ export function Home ({funcNav}){
         </div>
 
         <div className={Styles.home_conteiner}>
-        <Title text='Top Sellers' subtext="Roll up, roll up! " classTitle='Subtitile'/>
+        <Title text='Top Sellers' subtext="-Roll up, roll up! " classTitle='Subtitile'/>
           
         <Grid/>
 
         <div className={Styles.container_About}>
 
         <div className={Styles.about_text}>
-          <h1 data-text='Nós somos os renovados (Super Mercado) HypeStore.'>Nós somos os renovados (Super Mercado) HypeStore.</h1>
+        <Title datatext='Nós somos os renovados (Super Mercado) HypeStore.' 
+        text='Nós somos os renovados (Super Mercado) HypeStore.' 
+        classTitle='TitleAbout'/>
+          
           <div className={Styles.btn}>
             <LinkButton ClassBtn='Botao'txt='Read all About it'/>
           </div>
@@ -96,10 +99,11 @@ export function Home ({funcNav}){
         <div className={Styles.about_link}>
           <Link>LEARN MORE ABOUT US</Link>
         </div>
-
+        <Title text='Especially for you' subtext="-Especially for you" classTitle='Subtitile'/>
         </div>
         
         <div className={Styles['home-card']}>
+        
           
            <Slidet/>
         </div>

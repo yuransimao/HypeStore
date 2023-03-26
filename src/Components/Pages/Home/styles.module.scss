@@ -28,6 +28,7 @@ width:100%;
 
 
 
+
 .home_conteiner{
 margin: 0 auto;
 align-items:center;
@@ -46,23 +47,7 @@ width:50%;
 border-radius:12px 0 0  12px;
 padding:4rem;
 background:$color-yellow-light;
-h1{
-position:relative;
-font-family:$font-MPLUSCodeLatin;
-font-weight:200;
-color:transparent;
-&::before{
-animation:texto  5s steps(110, end) alternate infinite;
-content:attr(data-text);
-position:absolute;
-white-space:nowrap;
-overflow:hidden;
-color:$color-netflix;
-width:0px;
-border-right:4px solid $color-netflix;
 
-}
-}
 .btn{
 margin-top:3rem;
 margin-bottom:3rem;
@@ -119,20 +104,20 @@ font-weight:50;
 }
 
 .about_link{
-    display:flex;
-    justify-content:end;
-    font-family:$font-OpenSans;
-    font-weight:400;
-    padding-right:1rem;
-    
-    a{
-        font-size:1.3rem;
-        color:$color-netflix;
-        transition:all .4s;
-        &:hover{
-            color:$color-gray-dark;
-        }
-     }
+display:flex;
+justify-content:end;
+font-family:$font-OpenSans;
+font-weight:500;
+padding-right:1rem;
+
+a{
+font-size:1.5rem;
+color:$color-netflix;
+transition:all .4s;
+&:hover{
+color:$color-gray-dark;
+}
+}
 }
 }
 
@@ -141,16 +126,3 @@ font-weight:50;
 }
 
 
-@keyframes texto{
-0%{
-width:0;
-border-color:transparent;
-}
-50%{
-
-border-color:$color-netflix;
-}
-100%{
-width:92%;
-}
-}
