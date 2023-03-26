@@ -107,6 +107,11 @@ export function Home ({funcNav}){
           
            <Slidet/>
         </div>
+        <div className={Styles['Card-text']}>
+        <Title text='Dear Apple, Samsung, LG and Co.,'  classTitle='Subtitile'/>
+        <p>We adore your products,<br/>but we like them more when they're refurbished. <br/>It's more romantic, less wasteful,<br/>and quite frankly - it's just so much cheaper.<br/><br/>Kisses,<br/> Quentin, Thibaud and Vianney <br/> Hype Store Founders
+        </p>
+        </div>
         
         </div>
 

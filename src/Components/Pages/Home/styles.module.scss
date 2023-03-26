@@ -23,7 +23,19 @@ height:50vh;
 .home_Card{
 width:100%;
 
-
+.Card-text{
+    width:90%;
+    margin:0 auto;
+    p{
+        font-family:$font-OpenSans;
+        line-height:3rem;
+        white-space: pre-line;
+        margin-bottom:2.4rem;
+        font-size:1.6rem;
+        font-weight:300;
+        
+    }
+}
 
 
 
