@@ -1,11 +1,12 @@
-
+import {Link} from "react-router-dom"
 import Styles from"./styles.module.scss"
 import Swippers from"../../Layout/Slide/Swiper"
 import {Slidet} from"../../Layout/Slide/SlideCard/slidet"
 import {Grid} from"../../Layout/Grid/grid"
+import {Title} from"../../Layout/Title/title"
 import {LinkButton} from"../../Layout/Button/button"
 import {Seta,Soriso, Sacola,Impack} from"../../Layout/Icons/icons"
-import Cash from "../../../ImgandVideo/Cash.svg"
+import Cash from"../../../ImgandVideo/Cash.svg"
 
 
 
@@ -22,14 +23,15 @@ export function Home ({funcNav}){
                 </div>
                 
               <div className={Styles.home_Card}>
-              <h1 className={Styles.Home_titile}>Hotter than the hottest potato <span>Or “potatoe”</span></h1>
+              <Title text='Hotter than the hottest potato' subtext="Or 'potatoe' " classTitle='titile'/>
 
               <div className={Styles['home-card']}>
            <Slidet/>
         </div>
 
         <div className={Styles.home_conteiner}>
-          <h1 className={Styles.Home_Subtitile}>Top Sellers <span>- Roll up, roll up!</span></h1>
+        <Title text='Top Sellers' subtext="Roll up, roll up! " classTitle='Subtitile'/>
+          
         <Grid/>
 
         <div className={Styles.container_About}>
@@ -91,7 +93,17 @@ export function Home ({funcNav}){
 
         </div>
 
+        <div className={Styles.about_link}>
+          <Link>LEARN MORE ABOUT US</Link>
         </div>
+
+        </div>
+        
+        <div className={Styles['home-card']}>
+          
+           <Slidet/>
+        </div>
+        
         </div>
 
               
