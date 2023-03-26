@@ -35,7 +35,7 @@ export function Home ({funcNav}){
         <div className={Styles.container_About}>
 
         <div className={Styles.about_text}>
-          <h1>Nós somos os renovados(super) HypeStore.</h1>
+          <h1 data-text='Nós somos os renovados (Super Mercado) HypeStore.'>Nós somos os renovados (Super Mercado) HypeStore.</h1>
           <div className={Styles.btn}>
             <LinkButton ClassBtn='Botao'txt='Read all About it'/>
           </div>

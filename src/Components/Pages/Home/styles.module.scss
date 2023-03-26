@@ -57,20 +57,40 @@ font-weight: 350;
 .container_About{
 display:flex;
 width:100%;height:46rem;
-background:rgb(255,255,255);
+background:$color-white;
 border-radius:12px;
 .about_text{
 width:50%;
 border-radius:12px 0 0  12px;
 padding:4rem;
-background:rgb(231, 243, 57);
+background:$color-yellow-light;
+ h1{
+   position:relative;
+    font-family:$font-OpenSans;
+    font-weight:200;
+    
+    
+    
+    color:transparent;
+    &::before{
+        animation:texto  5s steps(110, end) alternate infinite;
+        content:attr(data-text);
+        position:absolute;
+        white-space:nowrap;
+        overflow:hidden;
+        color:$color-netflix;
+        width:0px;
+        border-right:4px solid $color-netflix;
+    }
+ }
 .btn{
 margin-top:3rem;
 margin-bottom:3rem;
 }
 .about_img{
-    background:rgba(0, 0, 0, 0.103);
+    background:$color-transparent;
     width:80%;
+    margin-left:2rem;
     img{
         max-width:100%;
 
@@ -120,4 +140,19 @@ margin-top:5rem;
 
 
 }
+}
+
+
+@keyframes texto{
+    0%{
+        width:0;
+        border-color:transparent;
+    }
+    50%{
+        
+        border-color:$color-netflix;
+    }
+    100%{
+        width:92%;
+    }
 }
