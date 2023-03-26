@@ -46,10 +46,10 @@ export function Home ({funcNav}){
         <div className={Styles.container_About_icon}> 
          <ul>
 
-          <div className={Styles.Item}>
+          <div className={Styles.Items}>
             <li>
               {Seta}
-              <div ClassName={Styles.Item_text}>
+              <div className={Styles.Item_text}>
               <span>Best offer on the market</span> <p>
               The best price and quality selected for you.
             </p>
@@ -58,25 +58,26 @@ export function Home ({funcNav}){
             </li>
 
             <li>
-              {Soriso}
-              <div >
-              <span >Quality guaranteed</span>
-              <p>Ensuring our sellers maintain our high standards.</p>
-              </div>
-            </li>
-          </div>
-
-          <div className={Styles.Item1}>
-            <li>
               {Sacola}
-              <div>
+              <div  className={Styles.Item_text}>
               <span >Proper Service</span>
               <p>A shopping experience that meets your expectations.</p>
               </div>
               </li>
+          </div>
+
+          <div className={Styles.Items1}>
+          <li>
+              {Soriso}
+              <div  className={Styles.Item_text}>
+              <span >Quality guaranteed</span>
+              <p>Ensuring our sellers maintain our high standards.</p>
+              </div>
+            </li>
+
               <li >
                 {Impack}
-              <div>
+              <div  className={Styles.Item_text}>
               <span >Real impact</span>
               <p>Addressing a very real problem.</p>
               </div>

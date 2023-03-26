@@ -3,7 +3,7 @@
 
 .home{
 width: 100vw;
-background:rgb(224, 224, 224);
+
 position:relative;
 top:9rem;
 
@@ -22,8 +22,8 @@ height:50vh;
 
 .home_Card{
 width:100%;
-height:82%;
-background:rgb(224, 224, 224);
+
+
 
 .Home_titile{
 margin-left: 7rem ;
@@ -57,7 +57,7 @@ font-weight: 350;
 .container_About{
 display:flex;
 width:100%;height:46rem;
-background:white;
+background:rgb(255,255,255);
 border-radius:12px;
 .about_text{
 width:50%;
@@ -76,14 +76,33 @@ ul{
 height:100%;
 width:100%;
 display:flex;
-justify-content:center;
-gap:10px;
+justify-content:space-around;
+margin-top:5rem;
 
-.Items{
+.Items, .Items1{
     li{
+    
     text-align:center;
+    font-family:$font-OpenSans;
+    padding:2rem;
+    
+    .Item_text{
+        span{
+        font-size:1.6rem;
+        font-weight:200;
+        
+    }
+    p{
+        
+        font-size:1.4rem;
+        font-weight:50;
+    }
+    }
 }
 }
+
+
+
 
 }
 }

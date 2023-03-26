@@ -11,9 +11,10 @@
     user-select:none;
 }
 
-html, body #root{
+html, body, #root{
     
     font-family: $font-Roboto;
+    background:rgba(250, 244, 244, 0.76);
   
     
 }
