@@ -64,37 +64,35 @@ width:50%;
 border-radius:12px 0 0  12px;
 padding:4rem;
 background:$color-yellow-light;
- h1{
-   position:relative;
-    font-family:$font-OpenSans;
-    font-weight:200;
-    
-    
-    
-    color:transparent;
-    &::before{
-        animation:texto  5s steps(110, end) alternate infinite;
-        content:attr(data-text);
-        position:absolute;
-        white-space:nowrap;
-        overflow:hidden;
-        color:$color-netflix;
-        width:0px;
-        border-right:4px solid $color-netflix;
-    }
- }
+h1{
+position:relative;
+font-family:$font-MPLUSCodeLatin;
+font-weight:200;
+color:transparent;
+&::before{
+animation:texto  5s steps(110, end) alternate infinite;
+content:attr(data-text);
+position:absolute;
+white-space:nowrap;
+overflow:hidden;
+color:$color-netflix;
+width:0px;
+border-right:4px solid $color-netflix;
+
+}
+}
 .btn{
 margin-top:3rem;
 margin-bottom:3rem;
 }
 .about_img{
-    background:$color-transparent;
-    width:80%;
-    margin-left:2rem;
-    img{
-        max-width:100%;
+background:$color-transparent;
+width:80%;
+margin-left:2rem;
+img{
+max-width:100%;
 
-    }
+}
 }
 }
 
@@ -109,24 +107,24 @@ justify-content:space-around;
 margin-top:5rem;
 
 .Items, .Items1{
-    li{
-    
-    text-align:center;
-    font-family:$font-OpenSans;
-    padding:2rem;
-    
-    .Item_text{
-        span{
-        font-size:1.6rem;
-        font-weight:200;
-        
-    }
-    p{
-        
-        font-size:1.4rem;
-        font-weight:50;
-    }
-    }
+li{
+
+text-align:center;
+font-family:$font-OpenSans;
+padding:2rem;
+
+.Item_text{
+span{
+font-size:1.6rem;
+font-weight:200;
+
+}
+p{
+
+font-size:1.4rem;
+font-weight:50;
+}
+}
 }
 }
 
@@ -144,15 +142,15 @@ margin-top:5rem;
 
 
 @keyframes texto{
-    0%{
-        width:0;
-        border-color:transparent;
-    }
-    50%{
-        
-        border-color:$color-netflix;
-    }
-    100%{
-        width:92%;
-    }
+0%{
+width:0;
+border-color:transparent;
+}
+50%{
+
+border-color:$color-netflix;
+}
+100%{
+width:92%;
+}
 }
