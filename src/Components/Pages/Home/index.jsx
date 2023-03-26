@@ -5,8 +5,7 @@ import {Slidet} from"../../Layout/Slide/SlideCard/slidet"
 import {Grid} from"../../Layout/Grid/grid"
 import {LinkButton} from"../../Layout/Button/button"
 import {Seta,Soriso, Sacola,Impack} from"../../Layout/Icons/icons"
-
-
+import Cash from "../../../ImgandVideo/Cash.svg"
 
 
 
@@ -39,6 +38,10 @@ export function Home ({funcNav}){
           <h1>Nós somos os renovados(super) HypeStore.</h1>
           <div className={Styles.btn}>
             <LinkButton ClassBtn='Botao'txt='Read all About it'/>
+          </div>
+
+          <div className={Styles.about_img}>
+              <img src={Cash} alt='cash'/>
           </div>
 
         </div>
