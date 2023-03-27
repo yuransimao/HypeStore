@@ -5,6 +5,7 @@ import {Slidet} from"../../Layout/Slide/SlideCard/slidet"
 import {Grid} from"../../Layout/Grid/grid"
 import {Title} from"../../Layout/Title/title"
 import {LinkButton} from"../../Layout/Button/button"
+import {Lista} from"../../Layout/Lista/lista"
 import {Seta,Soriso, Sacola,Impack} from"../../Layout/Icons/icons"
 import Cash from"../../../ImgandVideo/Cash.svg"
 
@@ -115,7 +116,13 @@ export function Home ({funcNav}){
           <Title text='Other categories' subtext="- Nothing lost, everything gained, and all refurbished.! " classTitle='Subtitile'/>
           
           <Grid/>
-
+           <Lista
+           text={'Best Sellers'}
+           text1={'Best Sellers'}
+           text2={'Good Deals'}
+           text3={'Best Sellers'}
+           
+           />
           </div>
         
         

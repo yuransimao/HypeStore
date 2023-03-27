@@ -1,0 +1,22 @@
+@import "../../../Styles/import";
+
+ul{
+font-family:$font-OpenSans;
+font-weight:300;
+.active{
+font-size:1.6rem;
+a{
+color:$color-Black-light;
+
+}
+}
+
+li{
+padding:0.3rem 0;
+font-size:1.4rem;
+line-height:2rem;
+a{
+color:$color-gray-dark;
+}
+}
+}
