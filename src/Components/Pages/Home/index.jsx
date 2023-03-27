@@ -116,13 +116,45 @@ export function Home ({funcNav}){
           <Title text='Other categories' subtext="- Nothing lost, everything gained, and all refurbished.! " classTitle='Subtitile'/>
           
           <Grid/>
-           <Lista
-           text={'Best Sellers'}
-           text1={'Best Sellers'}
-           text2={'Good Deals'}
-           text3={'Best Sellers'}
-           
-           />
+           <div className={Styles.container_Lista}>
+             <Lista
+             text={'Best Sellers'}
+             text1={'Best Sellers'}
+             text2={'Good Deals'}
+             text3={'Best Sellers'}
+             
+             />
+             <Lista
+             text={'Smartphones'}
+             text1={'Phone'}
+             text2={'Samsung'}
+             text3={'5G Phones'}
+             text4={'Fairphone'}
+             text5={'Huawei'}
+             text6={'Sony'}
+             text7={'Google'}
+             />
+             <Lista
+             text={'MacBook'}
+             text1={'All MacBook'}
+             text2={'MacBook Pro'}
+             text3={'MacBook Air'}
+             text4={'MacBook'}
+             text5={'MacBook Accessories'}
+             text6={'Sony'}
+            
+             />
+             <Lista
+             text={'iPad & Tablets'}
+             text1={'iPad'}
+             text2={'MacBook Pro'}
+             text3={'MacBook Air'}
+             text4={'MacBook'}
+             text5={'MacBook Accessories'}
+             text6={'Sony'}
+             text7={'Google'}
+             />
+           </div>
           </div>
         
         
