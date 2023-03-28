@@ -1,5 +1,6 @@
 import Styles from "./styles.module.scss"
 import {Lista} from "../Lista/lista"
+import { Link } from "react-router-dom"
 
 export function Footer(){
     return(
@@ -47,6 +48,11 @@ export function Footer(){
                     text3={`Medium`}
                     text4={`Deep Fried Mars Bars`}
                     />
+                </div>
+                <div className={Styles.Footer_items_icons}>
+                <h1><span>&copy;</span> Hype Store</h1>
+
+               <span><h2>Densenvolvido by:</h2> <Link to={'https://github.com/yuransimao'} target={"_blank"}>Yuran Simao</Link> </span>
                 </div>
             </div>
         </div>
