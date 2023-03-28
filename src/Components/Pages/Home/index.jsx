@@ -232,13 +232,44 @@ export function Home ({funcNav}){
              />
              <Lista
              text={'Small Appliances'}
-             text2={'Student Discount'}
-             text3={'Laptop'}
-             text4={'Desktop Computers'}
-             text5={'Tablets'}
+             text2={'Food Processors'}
+             text3={'Coffee Machines'}
+             text4={'Cookers'}
+             text5={'Blenders & Juicers'}
              text6={'Computer accessories'}
              text7={'Huawei'}
              text8={'Lenovo'}
+             />
+             <Lista
+             text={'Cameras & Camcorders'}
+             text2={'Cameras'}
+             text3={'Video Cameras & Camcorders'}
+             
+             />
+             <Lista
+             text={'Home Care Appliances'}
+             text2={'Vacuum Cleaners'}
+             text3={'Irons'}
+             text4={'Fan and Air conditioners'}
+             />
+             <Lista
+             text={'Drones'}
+             text2={'Drones'}
+             
+             />
+             <Lista
+             text={'Buying Guides'}
+             text2={'Smartphones'}
+             text3={'Audio'}
+             text4={'Console & Gaming'}
+             text5={'Home Appliance'}
+             text6={'Laptops'}
+             text7={'Events'}
+             text8={'Black Friday'}
+             />
+             <Lista
+             text={'Phone comparison'}
+             text2={'All phone comparisons'}
              />
 
            </div>
