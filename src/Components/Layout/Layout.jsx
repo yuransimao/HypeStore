@@ -2,7 +2,7 @@ import {Navbar} from "./Navbar/Navbar"
 import {SubMenu} from "./SubMenu/submenu"
 import {Carshop} from "./CardShop/Carshop"
 import { useState, } from "react"
-
+import { Footer } from "./Footer/footer"
 export function Layout({carItem,addItems, addItemspruductRemove,trashClearproduct}){
 
     const [car, setcart] = useState(false)
@@ -18,6 +18,8 @@ export function Layout({carItem,addItems, addItemspruductRemove,trashClearproduc
             trashClearproduct={trashClearproduct }
             onClick={() => setcart(true)} />) : ""}
            {menu ? <SubMenu/> : ""}
+
+           <Footer/>
         </>
     )
 }
