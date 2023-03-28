@@ -147,13 +147,100 @@ export function Home ({funcNav}){
              <Lista
              text={'iPad & Tablets'}
              text1={'iPad'}
-             text2={'MacBook Pro'}
-             text3={'MacBook Air'}
-             text4={'MacBook'}
-             text5={'MacBook Accessories'}
-             text6={'Sony'}
-             text7={'Google'}
+             text2={'iPad Pro'}
+             text3={'iPad Air'}
+             text4={'iPad accessories'}
+             text5={'iPad Mini'}
+             text6={'Galaxy Tab'}
+             text7={'Huawei'}
+             text8={'Lenovo'}
              />
+             <Lista
+             text={'Computers & Laptops'}
+             text1={'Laptop'}
+             text2={'Chromebook'}
+             text3={'Desktop Computers'}
+             text4={'2 in 1 hybrid PC'}
+             text5={'Computer accessories'}
+             />
+             <Lista
+             text={'Apple Watch'}
+             text1={'All products'}
+             />
+             <Lista
+             text={'Audio'}
+             text1={'Headphones & Earphones'}
+             text2={'Micro Hi-Fi System'}
+             text3={'Dock & Docking Station'}
+             text4={'Speakers'}
+             text5={'MP3 & MP4 Player'}
+             />
+             <Lista
+             text={'Accessories'}
+             text1={'Smartphones accessories'}
+             text2={'Computer accessories'}
+             text3={'Console accessories'}
+             
+             />
+             <Lista
+             text={'Manufacturer Renewed'}
+             text1={'Renewed by Razer'}
+             />
+             <Lista
+             text={'Smart Watches'}
+             text1={'Apple Watch'}
+             text2={'Samsung Watch'}
+             text3={'Fitbit Smart Watch'}
+            
+             />
+             <Lista
+             text={'Apple Corner'}
+             text1={'iPhone'}
+             text2={'iPad'}
+             text3={'Mac'}
+             text4={'Apple Watch'}
+             text5={'iPod'}
+             text6={'Other Apple products'}
+             text7={'Huawei'}
+             text8={'Lenovo'}
+             />
+             <Lista
+             text={'Game Consoles'}
+             text1={'Nintendo'}
+             text2={'PlayStation'}
+             text3={'Xbox'}
+             text4={'Games & Accessories'}
+             
+             />
+             <Lista
+             text={'Transportation'}
+             text2={'Electric scooters'}
+             text3={'Hoverboards'}
+             />
+             <Lista
+             text={'Home Office Shop'}
+             text2={'MacBook'}
+             text3={'Laptop'}
+             text4={'Desktop Computers'}
+             text5={'Tablets'}
+             text6={'Computer accessories'}
+             />
+             <Lista
+             text={'Student Discount'}
+             text2={'Student Discount'}
+
+             />
+             <Lista
+             text={'Small Appliances'}
+             text2={'Student Discount'}
+             text3={'Laptop'}
+             text4={'Desktop Computers'}
+             text5={'Tablets'}
+             text6={'Computer accessories'}
+             text7={'Huawei'}
+             text8={'Lenovo'}
+             />
+
            </div>
           </div>
         

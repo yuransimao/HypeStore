@@ -3,12 +3,12 @@
 ul{
 font-family:$font-OpenSans;
 font-weight:300;
+padding-right:8rem;
+text-align: start;
 .active{
 font-size:1.6rem;
-a{
-color:$color-Black-light;
-
-}
+margin-bottom: 2rem;
+font-weight: 400;
 }
 
 li{
