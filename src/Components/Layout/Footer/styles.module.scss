@@ -1,4 +1,23 @@
+@import "../../../Styles/import";
 .Footer{
     height: 75vh;
     background: #000;
+    color: white;
+    font-family:$font-OpenSans;
+    .Footer_items{
+        margin: 0 auto;
+     width: 90%;
+     padding: 3.2rem 0;
+     p{
+        font-weight: 300;
+        font-size: 1.5rem;
+        width: 94%;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+     }
+    }
+    .Footer_items_lista{
+        display: flex;
+        
+    }
 }
