@@ -22,3 +22,25 @@ color:$color-gray-dark;
 }
 }
 }
+.Lista_Secundaria{
+font-family:$font-OpenSans;
+font-weight:300;
+padding-right:8rem;
+text-align: left;
+margin-bottom: 2rem;
+width:20%;
+
+.active{
+font-size:1.2rem;
+font-weight: 400;
+}
+
+li{
+padding:0.3rem 0;
+font-size:1.4rem;
+line-height:2rem;
+a{
+color:$color-gray-dark;
+}
+}
+}

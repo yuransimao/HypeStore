@@ -118,6 +118,7 @@ export function Home ({funcNav}){
           <Grid/>
            <div className={Styles.container_Lista}>
              <Lista
+             CustomClass='Lista_principal'
              text={'Best Sellers'}
              text1={'Best Sellers'}
              text2={'Good Deals'}
@@ -125,6 +126,7 @@ export function Home ({funcNav}){
              
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Smartphones'}
              text1={'Phone'}
              text2={'Samsung'}
@@ -135,6 +137,7 @@ export function Home ({funcNav}){
              text7={'Google'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'MacBook'}
              text1={'All MacBook'}
              text2={'MacBook Pro'}
@@ -145,6 +148,7 @@ export function Home ({funcNav}){
             
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'iPad & Tablets'}
              text1={'iPad'}
              text2={'iPad Pro'}
@@ -156,6 +160,7 @@ export function Home ({funcNav}){
              text8={'Lenovo'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Computers & Laptops'}
              text1={'Laptop'}
              text2={'Chromebook'}
@@ -164,10 +169,12 @@ export function Home ({funcNav}){
              text5={'Computer accessories'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Apple Watch'}
              text1={'All products'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Audio'}
              text1={'Headphones & Earphones'}
              text2={'Micro Hi-Fi System'}
@@ -176,6 +183,7 @@ export function Home ({funcNav}){
              text5={'MP3 & MP4 Player'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Accessories'}
              text1={'Smartphones accessories'}
              text2={'Computer accessories'}
@@ -183,10 +191,12 @@ export function Home ({funcNav}){
              
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Manufacturer Renewed'}
              text1={'Renewed by Razer'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Smart Watches'}
              text1={'Apple Watch'}
              text2={'Samsung Watch'}
@@ -194,6 +204,7 @@ export function Home ({funcNav}){
             
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Apple Corner'}
              text1={'iPhone'}
              text2={'iPad'}
@@ -205,6 +216,7 @@ export function Home ({funcNav}){
              text8={'Lenovo'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Game Consoles'}
              text1={'Nintendo'}
              text2={'PlayStation'}
@@ -213,11 +225,13 @@ export function Home ({funcNav}){
              
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Transportation'}
              text2={'Electric scooters'}
              text3={'Hoverboards'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Home Office Shop'}
              text2={'MacBook'}
              text3={'Laptop'}
@@ -226,11 +240,13 @@ export function Home ({funcNav}){
              text6={'Computer accessories'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Student Discount'}
              text2={'Student Discount'}
 
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Small Appliances'}
              text2={'Food Processors'}
              text3={'Coffee Machines'}
@@ -241,23 +257,27 @@ export function Home ({funcNav}){
              text8={'Lenovo'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Cameras & Camcorders'}
              text2={'Cameras'}
              text3={'Video Cameras & Camcorders'}
              
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Home Care Appliances'}
              text2={'Vacuum Cleaners'}
              text3={'Irons'}
              text4={'Fan and Air conditioners'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Drones'}
              text2={'Drones'}
              
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Buying Guides'}
              text2={'Smartphones'}
              text3={'Audio'}
@@ -268,6 +288,7 @@ export function Home ({funcNav}){
              text8={'Black Friday'}
              />
              <Lista
+             CustomClass='Lista_principal'
              text={'Phone comparison'}
              text2={'All phone comparisons'}
              />

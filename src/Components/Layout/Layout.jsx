@@ -19,7 +19,7 @@ export function Layout({carItem,addItems, addItemspruductRemove,trashClearproduc
             onClick={() => setcart(true)} />) : ""}
            {menu ? <SubMenu/> : ""}
 
-           <Footer/>
+           
         </>
     )
 }

@@ -8,6 +8,7 @@ import {SIGNUP} from "../Components/Project/SreenLogin/SIGNUP/SIGNUP"
 import {SIGNIN} from "../Components/Project/SreenLogin/SIGNIN/SIGNIN"
 import {Container} from "../Components/Layout/Container/Container"
 import {Layout} from "../Components/Layout/Layout"
+import { Footer } from "../Components/Layout/Footer/footer"
 import { useState} from "react"
 
 
@@ -84,6 +85,7 @@ export default function Routers(){
            
         </Routes>
       </Container>
+      <Footer/>
       
     </BrowserRouter>
     </>

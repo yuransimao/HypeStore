@@ -2,7 +2,7 @@ import {Link} from "react-router-dom"
 import Styles from "./styles.module.scss"
 export function Lista (props){
     return(
-        <ul className={Styles.Lista_principal}>
+        <ul className={Styles[props.CustomClass]}>
             <li className={Styles.active}>
             <Link to={props.to}><h3>{props.text}</h3></Link>
             <ul>
