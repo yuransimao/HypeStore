@@ -116,7 +116,9 @@ export function Home ({funcNav}){
           <Title text='Other categories' subtext="- Nothing lost, everything gained, and all refurbished.! " classTitle='Subtitile'/>
           
           <Grid/>
+          <Title text='Discover all of our high-tech devices' subtext="– lovingly restored and squeaky clean! " classTitle='Subtitile'/>
            <div className={Styles.container_Lista}>
+            
              <Lista
              CustomClass='Lista_principal'
              text={'Best Sellers'}

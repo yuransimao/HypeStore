@@ -66,9 +66,25 @@ color: $color-gray-dark;
 }
 
 //Responsivedaade
+@media (max-width:1034px){
+
+    .Lista_principal{
+        width: 25%;
+    }
+
+}
+@media (max-width:775px){
+
+    .Lista_principal{
+        width: 32%;
+    }
+
+}
 
 @media (max-width:768px){
-    
+    .Lista_principal{
+        width: 50%;
+    }
     .Lista_Secundaria{
         width: 30%;
     }
@@ -80,7 +96,9 @@ color: $color-gray-dark;
     }
 }
 @media (max-width:500px){
-    
+    .Lista_principal{
+        width: 100%;
+    }
     .Lista_Secundaria{
         width: 100%;
     }
