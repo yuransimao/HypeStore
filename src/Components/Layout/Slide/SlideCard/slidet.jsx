@@ -36,6 +36,32 @@ export  function Slidet() {
         spaceBetween={30}
         freeMode={true}
         navigation={true}
+        breakpoints={{
+          500: {
+            slidesPerView: 1,
+            spaceBetween: 2,
+          },
+          540: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
         modules={[FreeMode, Navigation]}
         className={Styles.mySwiper}
       >

@@ -6,7 +6,7 @@ export function Footer(){
     return(
         <div className={Styles.Footer}>
             <div className={Styles.Footer_items}>
-                <p>Hello there! We're Back Market, the leading online marketplace dedicated to refurbished devices. Our mission is to make restored devices mainstream. Making old the 'new new' so to speak.</p>
+                <p>Hello there! We're Hype Store, the leading online marketplace dedicated to refurbished devices. Our mission is to make restored devices mainstream. Making old the 'new new' so to speak.</p>
 
                 <div className={Styles.Footer_items_lista}>
                     <Lista
