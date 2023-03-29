@@ -50,15 +50,18 @@ margin-bottom:7rem;
 
 .container_About{
 display:flex;
-width:100%;height:46rem;
+
+max-width:100%;
+height:50%;
 background:$color-white;
 border-radius:12px;
 margin-bottom:2rem;
 .about_text{
-width:50%;
+    
 border-radius:12px 0 0  12px;
 padding:4rem;
 background:$color-yellow-light;
+width: 100%;
 
 .btn{
 margin-top:3rem;
@@ -77,8 +80,8 @@ max-width:100%;
 
 
 .container_About_icon{
-width:50%;
-max-height:100%;
+width: 100%;
+height:50%;
 ul{
 height:100%;
 width:100%;
@@ -148,3 +151,25 @@ color:$color-gray-dark;
 }
 
 
+@media (max-width:768px){
+.home{
+.home_conteiner{
+.container_About{
+    flex-direction: column;
+   
+
+
+.about_text{
+border-radius:12px;
+width: 100%;
+order: 2;
+}
+
+.container_About_icon{
+max-width: 100%; 
+order: 1;  
+}
+}
+}
+}
+}
