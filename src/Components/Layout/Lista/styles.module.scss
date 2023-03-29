@@ -22,6 +22,9 @@ color:$color-gray-dark;
 }
 }
 }
+
+
+
 .Lista_Secundaria{
 font-family:$font-OpenSans;
 font-weight:300;
@@ -61,3 +64,25 @@ color: $color-gray-dark;
 }
 }
 }
+
+//Responsivedaade
+
+@media (max-width:768px){
+    
+    .Lista_Secundaria{
+        width: 30%;
+    }
+}
+@media (max-width:643px){
+    
+    .Lista_Secundaria{
+        width: 35%;
+    }
+}
+@media (max-width:500px){
+    
+    .Lista_Secundaria{
+        width: 100%;
+    }
+}
+
