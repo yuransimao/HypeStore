@@ -45,7 +45,7 @@ object-fit:cover;
 
 .Card_btn{
 font-family: $font-poppins;
-
+padding-right: 1rem;
 button{
 background: $color-white;
 padding: 1.5rem;
@@ -67,6 +67,10 @@ background: $light-bg;
         height:100%;
         text-align: center;
         padding: 2rem 0;
+
+        .Card_img{
+            width: 60%;
+        }
     }
     
 }

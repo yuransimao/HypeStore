@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import Styles from "./styles.module.scss"
 
-export function NavLink(props){
+export function NavLinks(props){
     return(
         <div className={Styles[props.Class]}>
                     <ul>
