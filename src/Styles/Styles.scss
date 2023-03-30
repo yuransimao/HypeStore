@@ -52,8 +52,19 @@ html{
 }
 @media (max-width:991px){
     html{
-        font-size: 55%;
+        font-size: 52%;
     }
 
 }
-
+@media (max-width:768px){
+   
+    .swiper-button-next{
+        top:calc(100vh / 2.20);
+       
+    }
+    .swiper-button-prev{
+        
+        top:calc(100vh / 2.2);
+        
+    }
+}
