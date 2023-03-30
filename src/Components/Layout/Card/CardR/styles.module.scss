@@ -59,3 +59,14 @@ background: $light-bg;
 }
 }
 }
+
+@media (max-width:768px) {
+
+    .Card_conteiner{
+        flex-direction: column;
+        height:100%;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+}
