@@ -58,7 +58,7 @@ border-radius:12px;
 margin-bottom:2rem;
 .about_text{
     
-border-radius:12px 0 0  12px;
+border-radius:1.5rem 0 0  1.5rem;
 padding:4rem;
 background:$color-yellow-light;
 width: 100%;
@@ -168,14 +168,14 @@ color:$color-gray-dark;
 
 
 .about_text{
-border-radius:12px;
+border-radius:1.5rem 1.5rem 1.5rem  1.5rem;
 width: 100%;
-order: 2;
+
 }
 
 .container_About_icon{
 max-width: 100%; 
-order: 1;  
+  
 }
 }
 }

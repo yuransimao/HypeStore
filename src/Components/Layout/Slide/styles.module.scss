@@ -11,8 +11,22 @@
       object-fit: cover;
       margin-bottom:2rem;
     }
+
   }
-  
+  .swiper-button-next{
+    top:calc(100vh / 4.5);
+    color:white;
+    &:after{
+        font-size:1rem;
+    }
+}
+.swiper-button-prev{
+    color:white;
+    top:calc(100vh / 4.5);
+    &:after{
+        font-size:1rem;
+    }
+}  
   
   
   
