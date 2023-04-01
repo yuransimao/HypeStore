@@ -4,7 +4,7 @@ import {FcGoogle} from "react-icons/fc"
 import {AiFillLinkedin} from "react-icons/ai"
 import { Link} from "react-router-dom"
 import store from "../../Img/store.png"
-import {firebase, auth, app} from "../../../Service/firbase"
+import {firebase, auth, app} from "../../../../Backend/Service/firbase"
 import { async } from "@firebase/util"
 
 export function Login({text1, text2,Span,img,input1,input2,input3,input4,Botao,to}){

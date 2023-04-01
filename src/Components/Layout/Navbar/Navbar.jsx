@@ -83,6 +83,14 @@ export function Navbar({ setcart, car, carItem, menu, setMenu }) {
                     <button className={Styles.Btn} >
                         <FaUserAlt />
                     </button>
+                <div className={Styles.User}>
+                    <div>
+                        <Link to='/SIGNUP'>Sign up</Link>
+                    </div>
+                    <div>
+                        <Link to='/SIGNIN'>Sign In</Link>
+                    </div>
+                </div>
                 </div>
 
             </div>

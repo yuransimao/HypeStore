@@ -85,7 +85,7 @@ export default function Routers(){
            
         </Routes>
       </Container>
-      <Footer/>
+      {showNav &&<Footer/>}
       
     </BrowserRouter>
     </>

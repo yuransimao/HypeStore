@@ -4,11 +4,13 @@ import {Input} from "../../../Layout/Form/input"
 import {FormButton} from "../../../Layout/Form/FormButton/FormButton"
 import {BsEnvelope} from "react-icons/bs"
 import {BiLockAlt} from "react-icons/bi"
+import Styles from "../styles.module.scss"
 
 
 export function SIGNIN ({funcNav}){
     funcNav ( false )
  return(
+    <>
     <Login
     text1="Sign in with:"
     text2="Are you already registered ?"
@@ -35,5 +37,6 @@ export function SIGNIN ({funcNav}){
             }
             to='/SIGNUP'
         />
+        </>
  )
 }
