@@ -4,11 +4,15 @@ import {Input} from "../../../Layout/Form/input"
 import {FormButton} from "../../../Layout/Form/FormButton/FormButton"
 import {BsEnvelope} from "react-icons/bs"
 import {BiLockAlt} from "react-icons/bi"
-import Styles from "../styles.module.scss"
+import {useState} from 'react'
 
 
 export function SIGNIN ({funcNav}){
     funcNav ( false )
+
+    const [name, SetName] =useState('')
+    const [email, SetEmail] =useState('')
+    const [password, SetPassword] =useState('')
  return(
     <>
     <Login
@@ -16,12 +20,15 @@ export function SIGNIN ({funcNav}){
     text2="Are you already registered ?"
     Span="Sign up"
     img={Teamamico}
-
+    value={name}
+    setInput={SetName}
     input2={
     <Input
     text="Email"
     placeholder="E-mail"
     icon={<BsEnvelope/>}
+    value={email}
+    setInput={SetEmail}
     />
     }
 
@@ -29,6 +36,8 @@ export function SIGNIN ({funcNav}){
     text="Password"
     placeholder="Password"
     icon={<BiLockAlt/>}
+    value={password}
+    setInput={SetPassword}
         />}
         Botao={
             <FormButton

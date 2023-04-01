@@ -6,7 +6,7 @@ import { Link} from "react-router-dom"
 import store from "../../Img/store.png"
 
 
-export function Login({text1, text2,Span,img,input1,input2,input3,input4,Botao,to}){
+export function Login({text1, text2,Span,img,input1,input2,input3,input4,Botao,to, SubmitBtn}){
      const handleclikButtonGoogle = async () =>{
         
      } 
@@ -37,7 +37,7 @@ export function Login({text1, text2,Span,img,input1,input2,input3,input4,Botao,t
                    </div>
 
                    <div className={Styles.FormLogin}>
-                    <form>
+                    <form onSubmit={SubmitBtn}>
                     {input1}
                     {input2}
                     {input3}
