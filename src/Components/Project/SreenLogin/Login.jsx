@@ -4,22 +4,14 @@ import {FcGoogle} from "react-icons/fc"
 import {AiFillLinkedin} from "react-icons/ai"
 import { Link} from "react-router-dom"
 import store from "../../Img/store.png"
-import {firebase, auth, app} from "../../../../Backend/Service/firbase"
-import { async } from "@firebase/util"
+
 
 export function Login({text1, text2,Span,img,input1,input2,input3,input4,Botao,to}){
      const handleclikButtonGoogle = async () =>{
-        const provider = new firebase.auth.GoogleAuthProvider();
-
-        const result = await auth.signInWithPopup(provider)
-        console.log(result)
-
+        
      } 
      const handleclikButtonFB = async () =>{
-        const provider = new firebase.auth.FacebookAuthProvider();
-
-        const result = await auth.signInWithPopup(provider)
-        console.log(result)
+        
 
      } 
 
