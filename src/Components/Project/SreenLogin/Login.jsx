@@ -6,14 +6,8 @@ import { Link} from "react-router-dom"
 import store from "../../Img/store.png"
 
 
-export function Login({text1, text2,Span,img,input1,input2,input3,input4,Botao,to, SubmitBtn}){
-     const handleclikButtonGoogle = async () =>{
-        
-     } 
-     const handleclikButtonFB = async () =>{
-        
-
-     } 
+export function Login({text1, text2,Span,img,input1,input2,input3,input4,Botao,to, SubmitBtn,handleclikButtonGoogle}){
+     
 
     return (
         <div className={Styles.Screnlogin_container}>
@@ -51,15 +45,15 @@ export function Login({text1, text2,Span,img,input1,input2,input3,input4,Botao,t
                      <p>{text1}</p>
                      <div className={Styles.Screnlogin_SecondColumIcons}>
                         <div className={Styles.Screnlogin_SecondColumIcon}>
-                            <Link onClick={handleclikButtonFB}><BsFacebook/></Link>
+                            <button > <BsFacebook/></button>
                         </div>
 
                        <div className={Styles.Screnlogin_SecondColumIcon}>
-                           <Link onClick={ handleclikButtonGoogle}> <FcGoogle/></Link>
+                           <button onClick={ handleclikButtonGoogle}> <FcGoogle/></button>
                        </div>
 
                         <div className={Styles.Screnlogin_SecondColumIcon}>
-                            <Link><AiFillLinkedin/></Link>
+                            <button><AiFillLinkedin/></button>
                         </div>
                      </div>
                      <p>{text2} <span><Link to={to}>{Span}</Link></span></p>

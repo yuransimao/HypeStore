@@ -11,6 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {Loader} from "../../../Loader/loader"
 import {useNavigate} from "react-router-dom"
+import { GoogleAuthProvider , signInWithPopup} from "firebase/auth";
 
 
 export function SIGNIN ({funcNav}){
@@ -42,12 +43,29 @@ export function SIGNIN ({funcNav}){
     SetIsLoading(false)
   });
     }
+
+    const provider = new GoogleAuthProvider();
+    const handleclikButtonGoogle = async () =>{
+       
+signInWithPopup(auth, provider)
+  .then((result) => {
+    
+    toast.success('Login Success')
+    navigation('/')
+  }).catch((error) => {
+   toast.error('Conta não existente')
+  });
+    } 
+    const handleclikButtonFB = async () =>{}
+       
+
  return(
     <>
 
     <ToastContainer/>
     {isLoading && <Loader/>}
     <Login
+    handleclikButtonGoogle={handleclikButtonGoogle}
     text1="Sign in with:"
     text2="Are you already registered ?"
     Span="Sign up"

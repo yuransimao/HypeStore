@@ -10,6 +10,8 @@ import {Container} from "../Components/Layout/Container/Container"
 import {Layout} from "../Components/Layout/Layout"
 import { Footer } from "../Components/Layout/Footer/footer"
 import { useState} from "react"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Routers(){
@@ -50,7 +52,7 @@ export default function Routers(){
     return(
     <>
      <BrowserRouter>
-     
+     <ToastContainer/>
      {showNav &&
       <Layout 
       addItems={addItems} 
