@@ -68,6 +68,8 @@ signInWithPopup(auth, provider)
     handleclikButtonGoogle={handleclikButtonGoogle}
     text1="Sign in with:"
     text2="Are you already registered ?"
+    text3='Esqueceste tua senha ?'
+    text4="Redefinir"
     Span="Sign up"
     img={Teamamico}
     SubmitBtn={loginUser}
