@@ -6,6 +6,8 @@ import {BsEnvelope} from "react-icons/bs"
 import {BiLockAlt} from "react-icons/bi"
 import {AiOutlineUser} from "react-icons/ai"
 import {useState} from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export function SIGNUP ({funcNav}){
     funcNav ( false )
@@ -17,11 +19,38 @@ export function SIGNUP ({funcNav}){
     
     const registerUser= (e) =>{
         e.preventDefault()
-        console.log(name)
+        if (name == ''){
+            toast.error("Prencha o Campo Name")
+
+        }
+       
+        
+        if(password == ''){
+            toast.error("Prencha o Campo Password")
+        }
+        
+        else if(confpassword !== password ){
+            toast.error("Verifica a pass Word")
+        }
+        else if(password.length < 8){
+            toast.error("Password fraca")
+        }
+
+        if(email == ''){
+            toast.error("Prencha o Campo Email")
+        }
+
+        else if(email.indexOf('@')== -1 || email.indexOf('.')==-1 || (email.indexOf('@') - email.indexOf('.')==1)){
+            toast.error("Verifica o campo Email, Ex: 'hypeStore7@gmail.com' ")
+
+        }
     }
 
 
     return(
+        <>
+
+        <ToastContainer/>
         <Login
         text1="Sign up with:"
         text2="Are you already registered ?"
@@ -71,5 +100,6 @@ export function SIGNUP ({funcNav}){
         }
         to='/SIGNIN'
         />
+        </>
     )
 }
