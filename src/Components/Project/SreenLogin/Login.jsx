@@ -6,7 +6,7 @@ import { Link} from "react-router-dom"
 import store from "../../Img/store.png"
 
 
-export function Login({text1, text2,text3,text4,Span,img,input1,input2,input3,input4,Botao,to, SubmitBtn,handleclikButtonGoogle}){
+export function Login({text1, text2,text3,text4,Span,img,input1,input2,input3,input4,Botao,to,to1, SubmitBtn,handleclikButtonGoogle}){
      
 
     return (
@@ -41,7 +41,7 @@ export function Login({text1, text2,text3,text4,Span,img,input1,input2,input3,in
                     
                     </form>
                     </div>
-                    <p>{text3} <span><Link to={to}>{text4}</Link></span></p>
+                    <p>{text3} <span><Link to={to1}>{text4}</Link></span></p>
                      <p>{text1}</p>
                      <div className={Styles.Screnlogin_SecondColumIcons}>
                         <div className={Styles.Screnlogin_SecondColumIcon}>

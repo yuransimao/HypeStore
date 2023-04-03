@@ -6,6 +6,7 @@ import {Help} from "../Components/Pages/Help/Help"
 import {Aboult} from "../Components/Pages/Aboult/About"
 import {SIGNUP} from "../Components/Project/SreenLogin/SIGNUP/SIGNUP"
 import {SIGNIN} from "../Components/Project/SreenLogin/SIGNIN/SIGNIN"
+import {Reset} from "../Components/Project/SreenLogin/Reset/reset"
 import {Container} from "../Components/Layout/Container/Container"
 import {Layout} from "../Components/Layout/Layout"
 import { Footer } from "../Components/Layout/Footer/footer"
@@ -84,6 +85,7 @@ export default function Routers(){
             <Route path="/Aboult" element={<Aboult funcNav = {setShowNav}/>}/>
         <Route  path="/SIGNUP" element={<SIGNUP funcNav = {setShowNav}/>}/>
         <Route  path="/SIGNIN" element={<SIGNIN funcNav = {setShowNav}/>}/>
+        <Route  path="/Reset" element={<Reset funcNav = {setShowNav}/>}/>
            
         </Routes>
       </Container>
