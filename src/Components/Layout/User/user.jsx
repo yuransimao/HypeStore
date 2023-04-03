@@ -1,9 +1,25 @@
 import Styles from"./styles.module.scss"
-
+import {auth} from '../../../../Backend/Service/firbase'
 import {ImCross} from "react-icons/im"
 import { LinkButton } from "../Button/button"
+import { useState ,useEffect } from "react"
+import {  onAuthStateChanged } from "firebase/auth";
 export function UserMenu({setUserMenu}){
-    
+    const [userName, SetUserName] = useState('')
+    const [userEmail, SetUserEmail] = useState('')
+    const [userPhoto, SetUserPhoto] = useState('')
+    useEffect(()=>{
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+             
+              const uid = user.uid;
+              console.log(user.displayName, user.email, user.photoURL)
+            } else {
+              // User is signed out
+              // ...
+            }
+          });
+    },[])
 
 
     return(
