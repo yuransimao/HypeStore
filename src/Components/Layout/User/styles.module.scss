@@ -12,8 +12,22 @@ animation: fadeUp .4s linear ;
 z-index: 102;
 .User_btnCross{
 position: relative;
+top:1.5rem;
 left: calc(100% - 4em);
 cursor: pointer;
+}
+.Userlink{
+   position: relative;
+   top:calc(100vh - 30vh);
+    width: 100%;
+    height: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .LinkButton{
+        padding: 2rem;
+    }
 }
 }
 
