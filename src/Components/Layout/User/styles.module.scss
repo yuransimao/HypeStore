@@ -1,0 +1,25 @@
+@import "../../../Styles/import";
+.User{
+min-height:100vh;
+position:fixed;
+right:0;
+background:$color-yellow;
+width:20%;
+border-radius:4px 0 ;
+z-index:3;
+color:$color-white;
+animation: fadeUp .4s linear ;
+z-index: 102;
+.User_btnCross{
+position: relative;
+left: calc(100% - 4em);
+cursor: pointer;
+}
+}
+
+@keyframes fadeUp{
+    0%{
+    transform:translateX(5rem);
+    opacity:0;
+    }
+    }

@@ -18,7 +18,7 @@ import Styles from "./navbar.module.scss"
 
 
 
-export function Navbar({ setcart, car, carItem, menu, setMenu }) {
+export function Navbar({ setcart, car,menu, setMenu, setUsermenu,usermenu }) {
 
 
 
@@ -45,11 +45,19 @@ export function Navbar({ setcart, car, carItem, menu, setMenu }) {
     const cart = () => {
         setcart(!car)
         setMenu(false)
+        setUsermenu(false)
 
     }
     const Menu = () => {
         setcart(false)
+        setUsermenu(false)
         setMenu(!menu)
+
+    }
+    const UserMenu = () => {
+        setcart(false)
+        setMenu(false)
+        setUsermenu(!usermenu)
 
     }
 
@@ -80,17 +88,10 @@ export function Navbar({ setcart, car, carItem, menu, setMenu }) {
                     <button className={Styles.Btn} onClick={cart}>
                         <AiOutlineShoppingCart />
                     </button>
-                    <button className={Styles.Btn} >
+                    <button className={Styles.Btn} onClick={UserMenu} >
                         <FaUserAlt />
                     </button>
-                <div className={Styles.User}>
-                    <div>
-                        <Link to='/SIGNUP'>Sign up</Link>
-                    </div>
-                    <div>
-                        <Link to='/SIGNIN'>Sign In</Link>
-                    </div>
-                </div>
+                
                 </div>
 
             </div>
