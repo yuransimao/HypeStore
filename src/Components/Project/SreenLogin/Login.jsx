@@ -6,7 +6,7 @@ import { Link} from "react-router-dom"
 import store from "../../Img/store.png"
 
 
-export function Login({text1, text2,text3,text4,Span,img,input1,input2,input3,input4,Botao,to,to1, SubmitBtn,handleclikButtonGoogle}){
+export function Login(props){
      
 
     return (
@@ -15,41 +15,41 @@ export function Login({text1, text2,text3,text4,Span,img,input1,input2,input3,in
         <div className={Styles.Screnlogin_content}>
 
             <div className={Styles.Screnlogin_firstContent}>
-                <div className={Styles.Screnlogin_FirstColum}>
+                <div className={Styles[props.CustomClass]}>
                
-
+                
                <div className={Styles.Screnlogin_img}
-               ><img src={img} alt="ilustracion" />
+               ><img src={props.img} alt="ilustracion" />
                </div>
                     
              
                 </div>
 
-                <div className={Styles.Screnlogin_SecondColum}>
+                <div className={Styles[props.CustomClas]}>
                    
                    <div className={Styles.ScrenLoginlogo}><Link to="/"> <img  src={store} alt="logo" /></Link>
                    </div>
 
                    <div className={Styles.FormLogin}>
-                    <form onSubmit={SubmitBtn}>
-                    {input1}
-                    {input2}
-                    {input3}
-                    {input4}
-                    {Botao}
+                    <form onSubmit={props.SubmitBtn}>
+                    {props.input1}
+                    {props.input2}
+                    {props.input3}
+                    {props.input4}
+                    {props.Botao}
                     
                     
                     </form>
                     </div>
-                    <p>{text3} <span><Link to={to1}>{text4}</Link></span></p>
-                     <p>{text1}</p>
+                    <p>{props.text3} <span><Link to={props.to1}>{props.text4}</Link></span></p>
+                     <p>{props.text1}</p>
                      <div className={Styles.Screnlogin_SecondColumIcons}>
                         <div className={Styles.Screnlogin_SecondColumIcon}>
                             <button > <BsFacebook/></button>
                         </div>
 
                        <div className={Styles.Screnlogin_SecondColumIcon}>
-                           <button onClick={ handleclikButtonGoogle}> <FcGoogle/></button>
+                           <button onClick={ props.handleclikButtonGoogle}> <FcGoogle/></button>
                        </div>
 
                         <div className={Styles.Screnlogin_SecondColumIcon}>
@@ -57,7 +57,7 @@ export function Login({text1, text2,text3,text4,Span,img,input1,input2,input3,in
                         </div>
                      </div>
                      
-                     <p>{text2} <span><Link to={to}>{Span}</Link></span></p>
+                     <p>{props.text2} <span><Link to={props.to}>{props.Span}</Link></span></p>
                     </div>
                     
                 </div>

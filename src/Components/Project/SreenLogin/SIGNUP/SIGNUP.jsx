@@ -86,6 +86,8 @@ export function SIGNUP ({funcNav}){
         Span="Sign in"
         img={Newemployeeamico}
         SubmitBtn={registerUser}
+        CustomClass='Screnlogin_FirstColum'
+        CustomClas= 'Screnlogin_SecondColum'
         input1 ={
         <Input
         text="text"

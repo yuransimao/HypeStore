@@ -66,10 +66,13 @@ signInWithPopup(auth, provider)
     {isLoading && <Loader/>}
     <Login
     handleclikButtonGoogle={handleclikButtonGoogle}
+    CustomClass='Screnlogin_FirstColum'
+    CustomClas= 'Screnlogin_SecondColum'
     text1="Sign in with:"
     text2="Are you already registered ?"
     text3='Esqueceste tua senha ?'
     text4="Redefinir"
+    to1={'/Reset'}
     Span="Sign up"
     img={Teamamico}
     SubmitBtn={loginUser}
