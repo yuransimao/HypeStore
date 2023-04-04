@@ -69,9 +69,11 @@ export function UserMenu({setUserMenu}){
             <div className={Styles.User_Img}>
               <img src={userPhoto} alt={userNames}/>
             </div>
-            <h1>{userNames}</h1>
-            <h2>email: <span>{userEmail}</span></h2>
-            <h3>ID: <span>{userID}</span></h3>
+            <div className={Styles.userText}>
+              <h1>{userNames}</h1>
+              <h2>email: <span>{userEmail}</span></h2>
+              <h3>ID: <span>{userID}</span></h3>
+            </div>
             <button onClick={SignOut}>Sign Out</button>
             </div>
             </ShowLogin>
