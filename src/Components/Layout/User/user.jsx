@@ -6,7 +6,7 @@ import { useState ,useEffect } from "react"
 import {  onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from 'react-redux'
 import {SET_ACTIVE_USER, REMOVE_ACTIVE_USER} from "../../../Redux/Slice/Authslice"
-import {showLogin} from "./HidenUserLink/hidenuserLink"
+import {ShowLogin, ShowLogout} from "./HidenUserLink/hidenuserLink"
 
 export function UserMenu({setUserMenu}){
     const [userNames, SetUserName] = useState('')
@@ -47,6 +47,9 @@ export function UserMenu({setUserMenu}){
 
         <div className={Styles.User}>
             <button className={Styles.User_btnCross} onClick={() => setUserMenu(false)}><ImCross/></button>
+
+           
+          <ShowLogout>
         <div className={Styles.Userlink}>
            
 
@@ -62,6 +65,7 @@ export function UserMenu({setUserMenu}){
             />
             </div>
         </div>
+        </ShowLogout>
 
            
        
