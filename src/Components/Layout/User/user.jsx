@@ -4,16 +4,27 @@ import {ImCross} from "react-icons/im"
 import { LinkButton } from "../Button/button"
 import { useState ,useEffect } from "react"
 import {  onAuthStateChanged } from "firebase/auth";
+import { useDispatch } from 'react-redux'
+import {SET_ACTIVE_USER} from "../../../Redux/Slice/Authslice"
+
 export function UserMenu({setUserMenu}){
     const [userName, SetUserName] = useState('')
     const [userEmail, SetUserEmail] = useState('')
     const [userPhoto, SetUserPhoto] = useState('')
+    const dispatch = useDispatch()
+   
     useEffect(()=>{
         onAuthStateChanged(auth, (user) => {
             if (user) {
              
               const uid = user.uid;
               console.log(user.displayName, user.email, user.photoURL)
+              dispatch( SET_ACTIVE_USER({
+                email:user.email,
+                userName: user.displayName,
+                userID: user.uid,
+                userPHOTO: user.photoURL
+              }))
             } else {
               // User is signed out
               // ...
