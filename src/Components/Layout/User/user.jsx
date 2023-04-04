@@ -3,16 +3,30 @@ import {auth} from '../../../../Backend/Service/firbase'
 import {ImCross} from "react-icons/im"
 import { LinkButton } from "../Button/button"
 import { useState ,useEffect } from "react"
-import {  onAuthStateChanged } from "firebase/auth";
+import {  onAuthStateChanged,  signOut } from "firebase/auth";
 import { useDispatch } from 'react-redux'
 import {SET_ACTIVE_USER, REMOVE_ACTIVE_USER} from "../../../Redux/Slice/Authslice"
 import {ShowLogin, ShowLogout} from "./HidenUserLink/hidenuserLink"
+
 
 export function UserMenu({setUserMenu}){
     const [userNames, SetUserName] = useState('')
     const [userEmail, SetUserEmail] = useState('')
     const [userPhoto, SetUserPhoto] = useState('')
-    const dispatch = useDispatch()
+    const [userID, SetUserID] = useState('')
+    const dispatch = useDispatch() 
+
+
+    const SignOut = () =>{
+      signOut(auth).then(() => {
+        // Sign-out successful.
+      }).catch((error) => {
+        // An error happened.
+      });
+    }
+
+
+    
    
     useEffect(()=>{
 
@@ -27,6 +41,9 @@ export function UserMenu({setUserMenu}){
               }
               else{
                 SetUserName(user.displayName)
+                SetUserEmail(user.email)
+                SetUserPhoto(user.photoURL)
+                SetUserID(user.uid)
               }
               const uid = user.uid;
 
@@ -47,8 +64,17 @@ export function UserMenu({setUserMenu}){
 
         <div className={Styles.User}>
             <button className={Styles.User_btnCross} onClick={() => setUserMenu(false)}><ImCross/></button>
-
-           
+          <ShowLogin>
+            <div className={Styles.User_container}>
+            <div className={Styles.User_Img}>
+              <img src={userPhoto} alt={userNames}/>
+            </div>
+            <h1>{userNames}</h1>
+            <h2>email: <span>{userEmail}</span></h2>
+            <h3>ID: <span>{userID}</span></h3>
+            <button onClick={SignOut}>Sign Out</button>
+            </div>
+            </ShowLogin>
           <ShowLogout>
         <div className={Styles.Userlink}>
            
