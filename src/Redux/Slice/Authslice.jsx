@@ -11,8 +11,8 @@ const initialState = {
 const authSlice = createSlice({
     name:'auth',
     initialState,
-    reducer: {
-        SET_ACTIVE_USER:(state, action) =>{
+    reducers: {
+        SET_ACTIVE_USER: (state, action) => {
             console.log(action.payload)
         },
     },

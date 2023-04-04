@@ -45,15 +45,16 @@ export function SIGNIN ({funcNav}){
     }
 
     const provider = new GoogleAuthProvider();
-    const handleclikButtonGoogle = async () =>{
-       
+    const handleclikButtonGoogle = () =>{
+      SetIsLoading(true)
 signInWithPopup(auth, provider)
   .then((result) => {
-    
+    SetIsLoading(false)
     toast.success('Login Success')
     navigation('/')
   }).catch((error) => {
    toast.error('Conta não existente')
+   SetIsLoading(false)
   });
     } 
     const handleclikButtonFB = async () =>{}

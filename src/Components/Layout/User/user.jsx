@@ -24,7 +24,7 @@ export function UserMenu({setUserMenu}){
                 userName: user.displayName,
                 userID: user.uid,
                 userPHOTO: user.photoURL
-              }))
+              },))
             } else {
               // User is signed out
               // ...
