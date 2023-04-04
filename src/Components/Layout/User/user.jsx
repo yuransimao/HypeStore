@@ -5,7 +5,7 @@ import { LinkButton } from "../Button/button"
 import { useState ,useEffect } from "react"
 import {  onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from 'react-redux'
-import {SET_ACTIVE_USER} from "../../../Redux/Slice/Authslice"
+import {SET_ACTIVE_USER, REMOVE_ACTIVE_USER} from "../../../Redux/Slice/Authslice"
 
 export function UserMenu({setUserMenu}){
     const [userNames, SetUserName] = useState('')
@@ -18,13 +18,17 @@ export function UserMenu({setUserMenu}){
         onAuthStateChanged(auth, (user) => {
             if (user) {
              
-              if(user.displayName == nul){
-                  const name = user.email.slice(0, -10)
+              if(user.displayName == null){
+                  const name = user.email.substring(0, user.email.indexOf('@'))
                   const uName = name.charAt(0).toUpperCase() + name.slice(1)
                   SetUserName(uName)
+                  console.log(uName)
+              }
+              else{
+                SetUserName(user.displayName)
               }
               const uid = user.uid;
-              console.log(user.displayName, user.email, user.photoURL)
+
               dispatch( SET_ACTIVE_USER({
                 email:user.email,
                 userName: user.displayName ? user.displayName : userNames ,
@@ -32,8 +36,7 @@ export function UserMenu({setUserMenu}){
                 userPHOTO: user.photoURL
               },))
             } else {
-              // User is signed out
-              // ...
+              dispatch(REMOVE_ACTIVE_USER())
             }
           });
     },[])
