@@ -9,7 +9,7 @@ export function NavLinks(props){
                     <ul onClick={() => props.setMenu(false)}>
                         <li><NavLink className={Styles['active']}>Student Disconte</NavLink></li>
                         <li><NavLink className={Styles['active1']}>Good deals</NavLink></li>
-                        <li><NavLink>Smartphones</NavLink></li>
+                        <li><NavLink  to={'/Smartphones'} className={ActiveLink}>Smartphones</NavLink></li>
                         <li><NavLink>AirPods</NavLink></li>
                         <li><NavLink>Tablets</NavLink></li>
                         <li><NavLink>iPhone</NavLink></li>

@@ -17,6 +17,11 @@
     .active1{
         color:#FB6D72;
     }
+    .ActiveL{
+        color: rgb(87, 86, 86);
+        border-bottom: 4px solid rgb(99, 95, 95);
+        padding-bottom: 1.2rem;
+    }
     a{
     transition: all .4s ease-in-out;
     color:$color-white;
@@ -24,9 +29,7 @@
     &:hover{
     color: rgb(87, 86, 86);
     }
-    .ActiveL{
-        color: rgb(87, 86, 86);
-    }
+    
 }
 }
 

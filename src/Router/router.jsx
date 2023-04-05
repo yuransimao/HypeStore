@@ -1,7 +1,7 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import {Home} from "../Components/Pages/Home"
 import {Contact} from "../Components/Pages/Contact"
-import {Loja} from "../Components/Pages/Loja/Loja"
+import {Smartphones} from "../Components/Pages/smartphones/smartphones"
 import {Help} from "../Components/Pages/Help/Help"
 import {Aboult} from "../Components/Pages/Aboult/About"
 import {SIGNUP} from "../Components/Project/SreenLogin/SIGNUP/SIGNUP"
@@ -76,10 +76,8 @@ export default function Routers(){
           
             />}/>
             <Route  path="/Contact" element={<Contact funcNav = {setShowNav}/>}/>
-            <Route  path="/Loja" element={
-            <Loja 
-              addItems={addItems}
-              carItem={carItem}
+            <Route  path="/Smartphones" element={
+            <Smartphones
             funcNav = {setShowNav}/>}/>
             <Route  path="/Help" element={<Help funcNav = {setShowNav}/>}/>
             <Route path="/Aboult" element={<Aboult funcNav = {setShowNav}/>}/>

@@ -5,14 +5,14 @@ import Styles from"./styles.module.scss"
 import {MdKeyboardArrowRight} from "react-icons/md"
 
 
-export function Loja({addItems,funcNav}){
+export function Loja(){
 
  
  
     const [Data, setDataimg] = useState([])
     
     
-    funcNav(true)
+    
     return (
    
 <div className={Styles.Lojabox}>
