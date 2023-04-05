@@ -1,6 +1,7 @@
 import Styles from"./styles.module.scss"
 import {auth} from '../../../../Backend/Service/firbase'
 import {ImCross} from "react-icons/im"
+import {MdAdd, MdLogout} from "react-icons/md"
 import { LinkButton } from "../Button/button"
 import { useState ,useEffect } from "react"
 import {  onAuthStateChanged,  signOut } from "firebase/auth";
@@ -58,7 +59,8 @@ export function UserMenu({setUserMenu}){
                 userName: user.displayName ? user.displayName : userNames ,
                 userID: user.uid,
                 userPHOTO: user.photoURL
-              },))
+              },)
+              )
             } else {
               dispatch(REMOVE_ACTIVE_USER())
             }
@@ -83,7 +85,7 @@ export function UserMenu({setUserMenu}){
               <h2>email: <span>{userEmail}</span></h2>
               <h3>Id: <span>{userID}</span></h3>
             </div>
-            <button onClick={SignOut}>Sign Out</button>
+            <button onClick={SignOut}>Sign Out <span><MdLogout/></span></button>
             </div>
             </ShowLogin>
           <ShowLogout>

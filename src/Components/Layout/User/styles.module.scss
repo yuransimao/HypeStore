@@ -89,6 +89,9 @@ border-radius:50%;
 }}
 
 button{
+display: flex;
+align-items: center;
+justify-content: center;
 font-family: $font-poppins;
 font-size: 1.5rem;
 cursor:pointer;
@@ -97,6 +100,11 @@ color:$color-white;
 min-width: 60%;
 border-radius: 0.5rem;
 padding: 1rem 0.5rem;
+span{
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color:$color-gray-dark;  
+}
 &:hover{
 filter:brightness(0.9);
 

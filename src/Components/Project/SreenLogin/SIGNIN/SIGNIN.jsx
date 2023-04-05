@@ -25,6 +25,7 @@ export function SIGNIN ({funcNav}){
 
     const loginUser = (e) =>{
         e.preventDefault()
+        
         SetIsLoading(true)
 
         signInWithEmailAndPassword(auth, email, password)
