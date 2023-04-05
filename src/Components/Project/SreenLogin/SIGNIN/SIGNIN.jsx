@@ -39,7 +39,7 @@ export function SIGNIN ({funcNav}){
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    toast.error(error.message)
+    toast.error('Verifique seus dados')
     SetIsLoading(false)
   });
     }

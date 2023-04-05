@@ -7,6 +7,9 @@ import {  onAuthStateChanged,  signOut } from "firebase/auth";
 import { useDispatch } from 'react-redux'
 import {SET_ACTIVE_USER, REMOVE_ACTIVE_USER} from "../../../Redux/Slice/Authslice"
 import {ShowLogin, ShowLogout} from "./HidenUserLink/hidenuserLink"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 export function UserMenu({setUserMenu}){
@@ -14,14 +17,17 @@ export function UserMenu({setUserMenu}){
     const [userEmail, SetUserEmail] = useState('')
     const [userPhoto, SetUserPhoto] = useState('')
     const [userID, SetUserID] = useState('')
+    
     const dispatch = useDispatch() 
 
 
     const SignOut = () =>{
+      
       signOut(auth).then(() => {
-        // Sign-out successful.
+        
+        toast.success('Log out')
       }).catch((error) => {
-        // An error happened.
+        
       });
     }
 
@@ -45,7 +51,7 @@ export function UserMenu({setUserMenu}){
                 SetUserPhoto(user.photoURL)
                 SetUserID(user.uid)
               }
-              const uid = user.uid;
+              
 
               dispatch( SET_ACTIVE_USER({
                 email:user.email,
@@ -61,8 +67,11 @@ export function UserMenu({setUserMenu}){
 
 
     return(
-
+          <>
+           <ToastContainer/>
+          
         <div className={Styles.User}>
+          
             <button className={Styles.User_btnCross} onClick={() => setUserMenu(false)}><ImCross/></button>
           <ShowLogin>
             <div className={Styles.User_container}>
@@ -70,9 +79,9 @@ export function UserMenu({setUserMenu}){
               <img src={userPhoto} alt={userNames}/>
             </div>
             <div className={Styles.userText}>
-              <h1> Your name:<span>{userNames}</span></h1>
+              <h1> {userNames}</h1>
               <h2>email: <span>{userEmail}</span></h2>
-              <h3>ID: <span>{userID}</span></h3>
+              <h3>Id: <span>{userID}</span></h3>
             </div>
             <button onClick={SignOut}>Sign Out</button>
             </div>
@@ -98,5 +107,6 @@ export function UserMenu({setUserMenu}){
            
        
         </div>
+        </>
     )
 }

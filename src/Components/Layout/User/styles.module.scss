@@ -10,6 +10,7 @@ z-index:3;
 color:$color-white;
 animation: fadeUp .4s linear ;
 z-index: 102;
+
 .User_btnCross{
 position: relative;
 top:1.5rem;
@@ -17,6 +18,7 @@ left: calc(100% - 4em);
 color:$color-white;
 cursor: pointer;
 }
+
 .Userlink{
 position: relative;
 top:calc(100vh - 39vh);
@@ -31,6 +33,7 @@ justify-content: center;
 padding: 2rem;
 }
 }
+
 .User_container{
 height:100%;
 width:100%;
@@ -39,34 +42,67 @@ flex-direction:column;
 align-items:center;
 margin-top: 7rem;
 
+.userText{
+font-family: $font-BebasNeue;
+text-align: center;
+padding: 1rem 0;
+margin-bottom: 2rem;
 
-.User_Img{ clip-path: circle(50%);
+h1{
+font-size: 3rem;
+font-weight: 10; 
+}
+h2{
+font-weight: 10; 
+text-transform: capitalize;
+padding:1rem 0;
 
+span{
+text-transform: none;
+font-family: $font-MPLUSCodeLatin;
+font-weight: 400;
 
+}
+}
+h3{
+font-size: 1.5rem;
+font-weight: 10;
 
-width:50%;
+span{
+text-transform: none;
+font-family: $font-MPLUSCodeLatin;
+font-weight: 400;
+color:#D6B6FF;
+}
+}
+}
 
+.User_Img{ 
+clip-path: circle(50%);
+max-width:70%;
 img{
 object-fit: cover;
-width:100%;
-border:6px solid $color-orange;
+max-width:100%;
+border:6px solid $color-green;
 border-radius:50%;
 
 }}
+
 button{
 font-family: $font-poppins;
 font-size: 1.5rem;
 cursor:pointer;
 background:$color-terciaria;
 color:$color-white;
-min-width: 90%;
+min-width: 60%;
 border-radius: 0.5rem;
 padding: 1rem 0.5rem;
 &:hover{
-    filter:brightness(0.9);
-   
+filter:brightness(0.9);
+
 }
 }
+
 }
 }
 
@@ -78,8 +114,8 @@ opacity:0;
 }
 
 @media (max-width:768px){
-    .User{
-        width:100%;
-    }
+.User{
+width:100%;
+}
 
 }
