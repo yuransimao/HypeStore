@@ -32,6 +32,9 @@ export function Navbar({ setcart, car,menu, setMenu, setUsermenu,usermenu }) {
 
             if (window.scrollY >= 550) {
                 setNavbar(true)
+                setcart(false)
+                setMenu(false)
+                setUsermenu(false)
             }
             else { setNavbar(false) }
         }

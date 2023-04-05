@@ -70,7 +70,7 @@ export function UserMenu({setUserMenu}){
               <img src={userPhoto} alt={userNames}/>
             </div>
             <div className={Styles.userText}>
-              <h1>{userNames}</h1>
+              <h1> Your name:<span>{userNames}</span></h1>
               <h2>email: <span>{userEmail}</span></h2>
               <h3>ID: <span>{userID}</span></h3>
             </div>
