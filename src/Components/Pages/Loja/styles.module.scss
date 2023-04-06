@@ -14,6 +14,7 @@ padding: 2rem 10rem;
 
 .Loja_Link{
 display: flex;
+margin-bottom:2rem;
 h2{
 padding-left: 2rem;
 }
@@ -30,6 +31,20 @@ padding: 0 1rem;
 font-size: 2rem;        
 }
 }
+}
+.Loja_icons{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    background:rgb(242,242,242);
+    padding:1.5rem 0;
+    .Icons{
+        display:flex;
+        align-items:center;
+        span{
+            padding:0 1.5rem;
+        }
+    }
 }
 }
 }

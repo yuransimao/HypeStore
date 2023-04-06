@@ -25,7 +25,7 @@ export function UserMenu({setUserMenu}){
     const SignOut = () =>{
       
       signOut(auth).then(() => {
-        
+        dispatch(REMOVE_ACTIVE_USER())
         toast.success('Log out')
       }).catch((error) => {
         
