@@ -3,9 +3,17 @@ import { smile, Arrow, folder} from "../../Layout/Icons/icons"
 import { Link } from "react-router-dom"
 import Styles from"./styles.module.scss"
 import {MdKeyboardArrowRight} from "react-icons/md"
+import  { useState } from 'react';
+
 
 
 export function Loja(){
+    const [selecao, setSelecao] = useState('');
+
+    const handleSelecao = (e) =>{
+        setSelecao(e.target.value)
+        console.log(selecao)
+    }
    
     return (
    
@@ -34,7 +42,7 @@ export function Loja(){
        <button>
         <label>Sort by</label>
         <span>
-            <select>
+            <select value={selecao} onChange={handleSelecao}>
                 <option value='Best seletter-0'>Best seletter</option>
                 <option value='Price : Low to High-1'>Price : Low to High</option>
                 <option value='Price : High to Low-2'>Price : High to Low</option>
