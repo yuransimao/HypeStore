@@ -28,14 +28,20 @@ export function Loja(){
 
        <div className={Styles.wapper_text}>
            <h1>Refurbished Smartphones</h1>
-           <p>Buy refurbished phones for cheap when you shop at Back Market. Explore our range of refurbished android phones and iPhones and grab yourself the latest and cheapest smartphone only at Back Market. Help prevent e-waste and buy refurbished phones instead.</p>
+           <p>Buy refurbished phones for cheap when you shop at Hype Store. Explore our range of refurbished android phones and iPhones and grab yourself the latest and cheapest smartphone only at Hype Store. Help prevent e-waste and buy refurbished phones instead.</p>
        </div>
        <div className={Styles.wapper_options}> 
-        <select>
-            <option>Best seletter</option>
-            <option>Price : Low to High</option>
-            <option>Price : High to Low</option>
-        </select>
+       <button>
+        <label>Sort by</label>
+        <span>
+            <select>
+                <option value='Best seletter-0'>Best seletter</option>
+                <option value='Price : Low to High-1'>Price : Low to High</option>
+                <option value='Price : High to Low-2'>Price : High to Low</option>
+            </select>
+        </span>
+        </button>
+
        </div>
    </div>
    </div>

@@ -39,6 +39,7 @@ font-size: 2rem;
     background:rgb(242,242,242);
     margin-bottom:6rem;
     padding:1.5rem 0;
+    border-radius:1rem;
     .Icons{
         display:flex;
         align-items:center;
@@ -47,6 +48,87 @@ font-size: 2rem;
             font-size:1.3rem;
             color: $color-gray-dark;
 
+        }
+    }
+}
+.Loja_wapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    .wapper_text{
+        font-family:$font-OpenSans;
+        line-height:2.5rem;
+        h1{
+            font-size:3rem;
+            padding:1rem 0;
+            font-weight:800;
+        }
+        p{
+            font-weight:400;
+            font-size:1.5rem;
+            text-align:justify;
+            width:80%;
+        }
+    }
+    .wapper_options{
+        min-width:20rem;
+        button{
+            position:relative;
+            cursor:pointer;
+            background:#fff;
+            width:100%;
+            padding:1rem 1.2rem;
+            height:5.5rem;
+            border-radius:0.6rem;
+            border:2px solid hsla(0,0%,7%,.43);
+
+        &:hover{
+            border:2px solid hsla(0,0%,7%,.73);
+        }
+        span{
+            position:absolute;
+            height:100%;
+            width:100%;
+            inset:0;
+            outline: 2px solid transparent;
+            outline-offset:2px;
+            border-width:0;
+            text-align:left;
+            flex-grow:1;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            white-space:nowrap;
+            line-height:2rem;
+            
+            select{
+                font-family:$font-OpenSans;
+                font-size:1.5rem;
+                width:100%;
+                cursor:pointer;
+                line-height:2rem;
+                font-size:2rem;
+                height:100%;
+                outline: 2px solid transparent;
+                padding-left:1.2rem;
+                padding-top:0.5rem ;
+                outline-offset:2px;
+               font-weight:400;
+            }
+        }
+        label{
+            color:$color-gray-dark;
+            display:flex;
+            align-items:center;
+            position:absolute;
+            top:0;
+            left:1.5rem;
+            height:auto;
+            padding:0.2rem 0;
+            text-align:left;
+            font-weight:300;
+            font-family:$font-OpenSans;
+            pointer-events:none;
+        }
         }
     }
 }
