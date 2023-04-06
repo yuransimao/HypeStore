@@ -37,12 +37,16 @@ font-size: 2rem;
     align-items:center;
     justify-content:space-around;
     background:rgb(242,242,242);
+    margin-bottom:6rem;
     padding:1.5rem 0;
     .Icons{
         display:flex;
         align-items:center;
         span{
             padding:0 1.5rem;
+            font-size:1.3rem;
+            color: $color-gray-dark;
+
         }
     }
 }
