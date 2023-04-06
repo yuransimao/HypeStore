@@ -4,15 +4,18 @@ import { Link } from "react-router-dom"
 import Styles from"./styles.module.scss"
 import {MdKeyboardArrowRight} from "react-icons/md"
 import  { useState } from 'react';
-
+import { useDispatch } from 'react-redux'
+import {Best_seletter} from "../../../Redux/Selecao/selecao"
 
 
 export function Loja(){
     const [selecao, setSelecao] = useState('');
-
+    const dispatch = useDispatch()
     const handleSelecao = (e) =>{
         setSelecao(e.target.value)
-        console.log(selecao)
+        dispatch(Best_seletter({
+            Besttoseletter: selecao
+        }))
     }
    
     return (

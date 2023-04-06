@@ -13,7 +13,15 @@ const Selecao = createSlice({
 
     reducers:{
         Best_seletter: (state, action) =>{
-            console.log(action.payload) 
+            
+             
+            const { Besttoseletter} = action.payload
+
+            if(Besttoseletter === 'Best seletter-0' ){
+            state.Bestseletter = true
+
+                console.log('0k')
+            }
         }
     }
 
