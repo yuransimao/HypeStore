@@ -11,17 +11,17 @@ export function Categorys(){
             <li className={Styles.subItem}>
             <NavLink className={({isActive}) => isActive ? `${Styles.Active}` : ""}>smartphones</NavLink>
             <ul className={Styles.subItem_category}>
-                <li className={Styles.items}><NavLink>Iphone</NavLink></li>
-                <li className={Styles.items}><NavLink>acessórios para smartphones</NavLink></li>
-                <li className={Styles.items}><NavLink>Smartphones 5G</NavLink></li>
-                <li className={Styles.items}><NavLink>Smartphones com chip duplo</NavLink></li>
+                <li><NavLink className={Styles.items}>Iphone</NavLink></li>
+                <li><NavLink className={Styles.items}>acessórios para smartphones</NavLink></li>
+                <li><NavLink className={Styles.items}>Smartphones 5G</NavLink></li>
+                <li><NavLink className={Styles.items}>Smartphones com chip duplo</NavLink></li>
                 {visivel === true ?(
                     <>
-                    <li className={Styles.items}><NavLink>Smartphones Android</NavLink></li>
-                    <li className={Styles.items}><NavLink>Bons negócios</NavLink></li>
-                    <li className={Styles.items}><NavLink>Smartphones dobráveis</NavLink></li>
-                    <li className={Styles.items}><NavLink>iPhones com baterias novas</NavLink></li>
-                    <li className={Styles.items}><NavLink>Smartphones antigos</NavLink></li>
+                    <li><NavLink className={Styles.items}>Smartphones Android</NavLink></li>
+                    <li><NavLink className={Styles.items}>Bons negócios</NavLink></li>
+                    <li><NavLink className={Styles.items}>Smartphones dobráveis</NavLink></li>
+                    <li><NavLink className={Styles.items}>iPhones com baterias novas</NavLink></li>
+                    <li><NavLink className={Styles.items}>Smartphones antigos</NavLink></li>
                     </> ): ""
                 }
                 <li><button onClick={() => setVisivel(!visivel)}>{visivel ? "Ver menos" : "Ver mais"}</button></li>
