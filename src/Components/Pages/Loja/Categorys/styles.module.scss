@@ -1,34 +1,61 @@
 @import "../../../../Styles/import";
 .Categorias{
-    max-width:100%;
-    max-height:100%;
-    font-family:$font-OpenSans;
-    h2{
-        margin-bottom:2rem;
-        font-size:2rem;
-        font-weight:500;
-        
-    }
+max-width:100%;
+max-height:100%;
+font-family:$font-OpenSans;
+h2{
+margin-bottom:2rem;
+font-size:2rem;
+font-weight:500;
 
-    .Categoria_Lista{
-        width:100%;
-        overflow:auto;
-        
-        li{
-            font-size:1.5rem;
-            padding:0.2rem 0;
-            a{
-                text-transform:capitalize;
-            color:#fff;
-            }
-        }
+}
 
-        .subItem{
-            margin-left:3rem;
-            margin-top:1rem;
-            ul{
-                margin-left:3rem;
-            }
-        }
-    }
+.Categoria_Lista{
+white-space:nowrap;
+//background:rgb(216, 216, 243);
+
+max-height:350px;
+
+
+li{
+font-size:1.5rem;
+padding:0.3rem 0;
+a{
+text-transform:capitalize;
+color:#4b4b4b;
+cursor:pointer;
+}
+.Active{
+    color:#000000; 
+    font-weight:650;
+}
+
+button{
+    cursor:pointer;
+    text-decoration: underline;
+}
+}
+
+.subItem{
+margin-left:3rem;
+margin-top:1rem;
+ul{
+margin-left:3rem;
+.items{
+padding:0.5rem 1rem ; 
+font-size:1.4rem;
+margin-bottom:0.2rem;
+transition:all .4s;
+border-left:4px solid transparent;
+&:hover{
+    background:rgba(205, 205, 214, 0.616);
+    border-radius:4px;
+    border-left:4px solid black;
+
+}
+}
+
+}
+}
+}
 }

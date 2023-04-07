@@ -55,7 +55,7 @@ font-size: 2rem;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    margin-bottom:2rem;
+    margin-bottom:4rem;
     .wapper_text{
         font-family:$font-OpenSans;
         line-height:2.5rem;
@@ -65,8 +65,8 @@ font-size: 2rem;
             font-weight:800;
         }
         p{
-            font-weight:400;
-            font-size:1.5rem;
+            font-weight:300;
+            font-size:1.4rem;
             text-align:justify;
             width:80%;
         }
@@ -140,7 +140,7 @@ font-size: 2rem;
 
 .Loja_Category{
     height:50%;
-    background:rgb(182, 182, 182);
+   
     width:30%;
 }
 }
