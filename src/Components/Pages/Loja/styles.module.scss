@@ -1,9 +1,9 @@
 @import "../../../Styles/import";
 .Lojabox{
-min-height:100vh;
+height:100vh;
 width:100vw;
-position: relative;
-top:calc(100vh - 66.5rem);
+//position: relative;
+margin-top:calc(100vh - 66.5rem);
 
 .Loja_conteiner{
 margin: 0 auto;
@@ -136,6 +136,12 @@ font-size: 2rem;
         }
         }
     }
+}
+
+.Loja_Category{
+    height:50%;
+    background:rgb(182, 182, 182);
+    width:30%;
 }
 }
 }
