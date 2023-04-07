@@ -12,7 +12,7 @@ const Selecao = createSlice({
     initialState,
 
     reducers:{
-        Best_seletter: (state, action) =>{
+        HandleSelecao: (state, action) =>{
             
              
             const { Besttoseletter} = action.payload
@@ -27,5 +27,5 @@ const Selecao = createSlice({
 
 })
 
-export const {Best_seletter} = Selecao.actions
+export const {HandleSelecao} = Selecao.actions
 export default Selecao.reducer

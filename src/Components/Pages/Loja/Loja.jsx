@@ -3,20 +3,28 @@ import { smile, Arrow, folder} from "../../Layout/Icons/icons"
 import { Link } from "react-router-dom"
 import Styles from"./styles.module.scss"
 import {MdKeyboardArrowRight} from "react-icons/md"
-import  { useState } from 'react';
+import  { useState , useEffect } from 'react';
 import { useDispatch } from 'react-redux'
-import {Best_seletter} from "../../../Redux/Selecao/selecao"
+import {HandleSelecao} from "../../../Redux/Selecao/selecao"
 
 
 export function Loja(){
     const [selecao, setSelecao] = useState('');
     const dispatch = useDispatch()
-    const handleSelecao = (e) =>{
-        setSelecao(e.target.value)
-        dispatch(Best_seletter({
+    
+    
+
+    const handleSelecao = () =>{   
+        dispatch(HandleSelecao({
             Besttoseletter: selecao
         }))
+        console.log(selecao)
     }
+
+    useEffect(() =>{
+        
+        handleSelecao()
+    },[selecao])
    
     return (
    
@@ -46,7 +54,7 @@ export function Loja(){
        <button>
         <label>Sort by</label>
         <span>
-            <select value={selecao} onChange={handleSelecao}>
+            <select value={selecao} onChange={(e) => setSelecao(e.target.value)}>
                 <option  hidden='hidden'  value></option>
                 <option value='Best seletter-0'>Best seletter</option>
                 <option value='Price : Low to High-1'>Price : Low to High</option>

@@ -81,11 +81,12 @@ font-size: 2rem;
             height:5.5rem;
             border-radius:0.6rem;
             border:2px solid hsla(0,0%,7%,.43);
-            transition-duration: .2s;
+            transition-duration: all .4s ;
             transition-timing-function: cubic-bezier(.4,0,.2,1);
 
         &:hover{
             border:2px solid hsla(0,0%,7%,.73);
+            background: $light-bg;
         }
         span{
             position:absolute;
