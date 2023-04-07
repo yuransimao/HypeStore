@@ -13,8 +13,7 @@ const Selecao = createSlice({
 
     reducers:{
         HandleSelecao: (state, action) =>{
-            
-             
+        
             const { Besttoseletter} = action.payload
 
             if(Besttoseletter === 'Best seletter-0' ){

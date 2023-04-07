@@ -6,6 +6,7 @@ import {MdKeyboardArrowRight} from "react-icons/md"
 import  { useState , useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import {HandleSelecao} from "../../../Redux/Selecao/selecao"
+import {Categorys} from "./Categorys/categorys"
 
 
 export function Loja(){
@@ -22,7 +23,6 @@ export function Loja(){
     }
 
     useEffect(() =>{
-        
         handleSelecao()
     },[selecao])
    
@@ -65,6 +65,11 @@ export function Loja(){
 
        </div>
    </div>
+
+    <div className={Styles.Loja_Category}>
+    <Categorys/>
+    </div>
+
    </div>
 </div>
 

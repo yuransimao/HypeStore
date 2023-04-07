@@ -55,6 +55,7 @@ font-size: 2rem;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    margin-bottom:2rem;
     .wapper_text{
         font-family:$font-OpenSans;
         line-height:2.5rem;
@@ -72,6 +73,7 @@ font-size: 2rem;
     }
     .wapper_options{
         min-width:20rem;
+        
         button{
             position:relative;
             cursor:pointer;
