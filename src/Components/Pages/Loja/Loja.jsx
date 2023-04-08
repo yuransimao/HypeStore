@@ -7,6 +7,7 @@ import  { useState , useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import {HandleSelecao} from "../../../Redux/Selecao/selecao"
 import {Categorys} from "./Categorys/categorys"
+import {ProdutoFilter} from "./ProdutoFilter/produtoFilter"
 
 
 export function Loja(){
@@ -69,7 +70,9 @@ export function Loja(){
     <div className={Styles.Loja_Category}>
     <Categorys/>
     </div>
-
+        
+            <ProdutoFilter/>
+        
    </div>
 </div>
 
