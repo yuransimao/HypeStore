@@ -3,14 +3,16 @@
 min-height:100vh;
 width:100vw;
 
-margin-top:calc(100vh - 66.5rem);
+
 
 .Loja_conteiner{
-margin: 0 auto;
+    margin-top:calc(100vh - 66.5rem);
 
-width: 100%;
-height: 100%;
+margin-left: auto;
+margin-right: auto;
 padding: 2rem 10rem;
+
+
 
 .Loja_Link{
 display: flex;
@@ -143,5 +145,11 @@ font-size: 2rem;
    
     width:23%;
 }
+.ProdutoFilter{
+    min-height:50%;
+   
+    width:23%;
 }
+}
+
 }

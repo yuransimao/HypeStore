@@ -71,7 +71,10 @@ export function Loja(){
     <Categorys/>
     </div>
         
-            <ProdutoFilter/>
+            <div className={Styles['ProdutoFilter']}>
+                <ProdutoFilter/>
+                </div>
+            
         
    </div>
 </div>
