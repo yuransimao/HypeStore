@@ -7,12 +7,18 @@ export function ProdutoFilter (){
                 <div className={Styles['progress']}></div>   
             </div>
             <div className={Styles['inputs-range']}>
-                <input type="range" name="" id="" />
-                <input type="range" name="" id="" />
+                <input type="range" min={'0'} max={'10000'} />
+                <input type="range"  min={'0'} max={'10000'}/>
             </div>
             <div className={Styles['inputs-Namber']}>
-                <input type="number" name="" id="" />
-                <input type="number" name="" id="" />
+            <div className={Styles['Namber']}>
+                <label>Min</label>
+                    <input type="number" />
+             </div>
+            <div className={Styles['Namber']}>
+            <label>Max</label>
+                <input type="number" />
+            </div>
             </div>
             
         </div>
