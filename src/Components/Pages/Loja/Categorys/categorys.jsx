@@ -3,15 +3,17 @@ import Styles from "./styles.module.scss"
 import {useState} from "react"
 export function Categorys(){
     const [visivel, setVisivel] = useState(false)
+    const ItensActive = ({isActive})  => (isActive === true ? `${Styles.itemsActive}`:`${Styles.items}`)
+    const Active = ({isActive}) => (  isActive ? `${Styles['Active']}` : '')
     return(
         <div className={Styles.Categorias}>
         <h2>Categorias</h2>
         <ul className={Styles.Categoria_Lista}>
             <li><NavLink>Produtos de alta tecnologia</NavLink></li>
             <li className={Styles.subItem}>
-            <NavLink className={({isActive}) => isActive ? `${Styles.Active}` : ""}>smartphones</NavLink>
+            <NavLink to={"/smartphones"} className={Active}>smartphones</NavLink>
             <ul className={Styles.subItem_category}>
-                <li><NavLink className={Styles.items}>Iphone</NavLink></li>
+                <li><NavLink to={"/Iphone"} className={ItensActive}>Iphone</NavLink></li>
                 <li><NavLink className={Styles.items}>acessórios para smartphones</NavLink></li>
                 <li><NavLink className={Styles.items}>Smartphones 5G</NavLink></li>
                 <li><NavLink className={Styles.items}>Smartphones com chip duplo</NavLink></li>

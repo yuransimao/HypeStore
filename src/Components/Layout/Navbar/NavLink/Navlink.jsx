@@ -12,7 +12,7 @@ export function NavLinks(props){
                         <li><NavLink  to={'/Smartphones'} className={ActiveLink}>Smartphones</NavLink></li>
                         <li><NavLink>AirPods</NavLink></li>
                         <li><NavLink>Tablets</NavLink></li>
-                        <li><NavLink>iPhone</NavLink></li>
+                        <li><NavLink to={'/Iphone'} className={ActiveLink}>iPhone</NavLink></li>
                         <li><NavLink>iPad</NavLink></li>
                         <li><NavLink>Apple Watch</NavLink></li>
                         <li><NavLink>iMac</NavLink></li>

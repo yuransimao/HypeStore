@@ -2,6 +2,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom"
 import {Home} from "../Components/Pages/Home"
 import {Contact} from "../Components/Pages/Contact"
 import {Smartphones} from "../Components/Pages/smartphones/smartphones"
+import {Iphone} from "../Components/Pages/Iphone/iphone"
 import {Help} from "../Components/Pages/Help/Help"
 import {Aboult} from "../Components/Pages/Aboult/About"
 import {SIGNUP} from "../Components/Project/SreenLogin/SIGNUP/SIGNUP"
@@ -76,9 +77,8 @@ export default function Routers(){
           
             />}/>
             <Route  path="/Contact" element={<Contact funcNav = {setShowNav}/>}/>
-            <Route  path="/Smartphones" element={
-            <Smartphones
-            funcNav = {setShowNav}/>}/>
+            <Route  path="/Smartphones" element={<Smartphones funcNav = {setShowNav}/>}/>
+            <Route  path="/Iphone" element={<Iphone funcNav = {setShowNav}/>}/>
             <Route  path="/Help" element={<Help funcNav = {setShowNav}/>}/>
             <Route path="/Aboult" element={<Aboult funcNav = {setShowNav}/>}/>
         <Route  path="/SIGNUP" element={<SIGNUP funcNav = {setShowNav}/>}/>
